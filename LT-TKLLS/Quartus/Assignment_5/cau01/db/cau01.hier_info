@@ -1,0 +1,515 @@
+|cau01
+Q2_ <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst3.CLK
+CLK => inst2.CLK
+CLK => Datapath_Multify_4bit:inst.CLK
+A[0] => Datapath_Multify_4bit:inst.A[0]
+A[1] => Datapath_Multify_4bit:inst.A[1]
+A[2] => Datapath_Multify_4bit:inst.A[2]
+A[3] => Datapath_Multify_4bit:inst.A[3]
+B[0] => Datapath_Multify_4bit:inst.B[0]
+B[1] => Datapath_Multify_4bit:inst.B[1]
+B[2] => Datapath_Multify_4bit:inst.B[2]
+B[3] => Datapath_Multify_4bit:inst.B[3]
+Start => inst14.IN2
+Q1_ <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0_ <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Outport[0] <= Datapath_Multify_4bit:inst.Outport[0]
+Outport[1] <= Datapath_Multify_4bit:inst.Outport[1]
+Outport[2] <= Datapath_Multify_4bit:inst.Outport[2]
+Outport[3] <= Datapath_Multify_4bit:inst.Outport[3]
+Outport[4] <= Datapath_Multify_4bit:inst.Outport[4]
+Outport[5] <= Datapath_Multify_4bit:inst.Outport[5]
+Outport[6] <= Datapath_Multify_4bit:inst.Outport[6]
+Outport[7] <= Datapath_Multify_4bit:inst.Outport[7]
+
+
+|cau01|Datapath_Multify_4bit:inst
+Result_B <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+B[0] => 74157:inst6.A1
+B[1] => 74157:inst6.A2
+B[2] => 74157:inst6.A3
+B[3] => 74157:inst6.A4
+Sel_B => 74157:inst6.SEL
+Sel_B => 74157:inst8.SEL
+CLK => 74194:inst5.CLK
+CLK => 74194:inst7.CLK
+CLK => 74194:inst.CLK
+CLK => 74194:inst14.CLK
+CLK => 74194:inst3.CLK
+CLK => 74194:inst15.CLK
+S1_B => 74194:inst5.S1
+S1_B => 74194:inst7.S1
+S0_B => 74194:inst5.S0
+S0_B => 74194:inst7.S0
+Outport[0] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Outport[1] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+Outport[2] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+Outport[3] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+Outport[4] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Outport[5] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Outport[6] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Outport[7] <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => 74157:inst2.A1
+A[1] => 74157:inst2.A2
+A[2] => 74157:inst2.A3
+A[3] => 74157:inst2.A4
+Sel_A => 74157:inst2.SEL
+Sel_A => 74157:inst4.SEL
+S1_A => 74194:inst.S1
+S1_A => 74194:inst3.S1
+S0_A => 74194:inst.S0
+S0_A => 74194:inst3.S0
+Sel_P => 74157:inst12.SEL
+Sel_P => 74157:inst13.SEL
+Load => 74194:inst14.S1
+Load => 74194:inst14.S0
+Load => 74194:inst15.S1
+Load => 74194:inst15.S0
+OE => inst22.OE
+OE => inst26.OE
+OE => inst25.OE
+OE => inst24.OE
+OE => inst23.OE
+OE => inst27.OE
+OE => inst28.OE
+OE => inst29.OE
+
+
+|cau01|Datapath_Multify_4bit:inst|74194:inst5
+QD <= 38.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 38.ACLR
+CLRN => 39.ACLR
+CLRN => 40.ACLR
+CLRN => 41.ACLR
+CLK => 38.CLK
+CLK => 39.CLK
+CLK => 40.CLK
+CLK => 41.CLK
+S1 => 13.IN0
+S1 => 52.IN0
+S1 => 56.IN0
+S1 => 60.IN0
+S1 => 64.IN0
+S1 => 63.IN1
+S1 => 59.IN2
+S1 => 55.IN2
+S1 => 51.IN2
+S0 => 12.IN0
+S0 => 50.IN1
+S0 => 62.IN0
+S0 => 63.IN0
+S0 => 58.IN1
+S0 => 59.IN1
+S0 => 54.IN1
+S0 => 55.IN1
+S0 => 51.IN1
+SLSI => 52.IN2
+SRSI => 62.IN2
+A => 63.IN2
+B => 59.IN0
+C => 55.IN0
+D => 51.IN0
+QC <= 39.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 40.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Datapath_Multify_4bit:inst|74157:inst6
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|cau01|Datapath_Multify_4bit:inst|74194:inst7
+QD <= 38.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 38.ACLR
+CLRN => 39.ACLR
+CLRN => 40.ACLR
+CLRN => 41.ACLR
+CLK => 38.CLK
+CLK => 39.CLK
+CLK => 40.CLK
+CLK => 41.CLK
+S1 => 13.IN0
+S1 => 52.IN0
+S1 => 56.IN0
+S1 => 60.IN0
+S1 => 64.IN0
+S1 => 63.IN1
+S1 => 59.IN2
+S1 => 55.IN2
+S1 => 51.IN2
+S0 => 12.IN0
+S0 => 50.IN1
+S0 => 62.IN0
+S0 => 63.IN0
+S0 => 58.IN1
+S0 => 59.IN1
+S0 => 54.IN1
+S0 => 55.IN1
+S0 => 51.IN1
+SLSI => 52.IN2
+SRSI => 62.IN2
+A => 63.IN2
+B => 59.IN0
+C => 55.IN0
+D => 51.IN0
+QC <= 39.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 40.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Datapath_Multify_4bit:inst|74157:inst8
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|cau01|Datapath_Multify_4bit:inst|74194:inst14
+QD <= 38.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 38.ACLR
+CLRN => 39.ACLR
+CLRN => 40.ACLR
+CLRN => 41.ACLR
+CLK => 38.CLK
+CLK => 39.CLK
+CLK => 40.CLK
+CLK => 41.CLK
+S1 => 13.IN0
+S1 => 52.IN0
+S1 => 56.IN0
+S1 => 60.IN0
+S1 => 64.IN0
+S1 => 63.IN1
+S1 => 59.IN2
+S1 => 55.IN2
+S1 => 51.IN2
+S0 => 12.IN0
+S0 => 50.IN1
+S0 => 62.IN0
+S0 => 63.IN0
+S0 => 58.IN1
+S0 => 59.IN1
+S0 => 54.IN1
+S0 => 55.IN1
+S0 => 51.IN1
+SLSI => 52.IN2
+SRSI => 62.IN2
+A => 63.IN2
+B => 59.IN0
+C => 55.IN0
+D => 51.IN0
+QC <= 39.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 40.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Datapath_Multify_4bit:inst|74157:inst12
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|cau01|Datapath_Multify_4bit:inst|7483:inst1
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Datapath_Multify_4bit:inst|74157:inst9
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|cau01|Datapath_Multify_4bit:inst|74194:inst
+QD <= 38.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 38.ACLR
+CLRN => 39.ACLR
+CLRN => 40.ACLR
+CLRN => 41.ACLR
+CLK => 38.CLK
+CLK => 39.CLK
+CLK => 40.CLK
+CLK => 41.CLK
+S1 => 13.IN0
+S1 => 52.IN0
+S1 => 56.IN0
+S1 => 60.IN0
+S1 => 64.IN0
+S1 => 63.IN1
+S1 => 59.IN2
+S1 => 55.IN2
+S1 => 51.IN2
+S0 => 12.IN0
+S0 => 50.IN1
+S0 => 62.IN0
+S0 => 63.IN0
+S0 => 58.IN1
+S0 => 59.IN1
+S0 => 54.IN1
+S0 => 55.IN1
+S0 => 51.IN1
+SLSI => 52.IN2
+SRSI => 62.IN2
+A => 63.IN2
+B => 59.IN0
+C => 55.IN0
+D => 51.IN0
+QC <= 39.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 40.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Datapath_Multify_4bit:inst|74157:inst2
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|cau01|Datapath_Multify_4bit:inst|74194:inst15
+QD <= 38.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 38.ACLR
+CLRN => 39.ACLR
+CLRN => 40.ACLR
+CLRN => 41.ACLR
+CLK => 38.CLK
+CLK => 39.CLK
+CLK => 40.CLK
+CLK => 41.CLK
+S1 => 13.IN0
+S1 => 52.IN0
+S1 => 56.IN0
+S1 => 60.IN0
+S1 => 64.IN0
+S1 => 63.IN1
+S1 => 59.IN2
+S1 => 55.IN2
+S1 => 51.IN2
+S0 => 12.IN0
+S0 => 50.IN1
+S0 => 62.IN0
+S0 => 63.IN0
+S0 => 58.IN1
+S0 => 59.IN1
+S0 => 54.IN1
+S0 => 55.IN1
+S0 => 51.IN1
+SLSI => 52.IN2
+SRSI => 62.IN2
+A => 63.IN2
+B => 59.IN0
+C => 55.IN0
+D => 51.IN0
+QC <= 39.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 40.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Datapath_Multify_4bit:inst|74157:inst13
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|cau01|Datapath_Multify_4bit:inst|7483:inst11
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Datapath_Multify_4bit:inst|74157:inst10
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|cau01|Datapath_Multify_4bit:inst|74194:inst3
+QD <= 38.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 38.ACLR
+CLRN => 39.ACLR
+CLRN => 40.ACLR
+CLRN => 41.ACLR
+CLK => 38.CLK
+CLK => 39.CLK
+CLK => 40.CLK
+CLK => 41.CLK
+S1 => 13.IN0
+S1 => 52.IN0
+S1 => 56.IN0
+S1 => 60.IN0
+S1 => 64.IN0
+S1 => 63.IN1
+S1 => 59.IN2
+S1 => 55.IN2
+S1 => 51.IN2
+S0 => 12.IN0
+S0 => 50.IN1
+S0 => 62.IN0
+S0 => 63.IN0
+S0 => 58.IN1
+S0 => 59.IN1
+S0 => 54.IN1
+S0 => 55.IN1
+S0 => 51.IN1
+SLSI => 52.IN2
+SRSI => 62.IN2
+A => 63.IN2
+B => 59.IN0
+C => 55.IN0
+D => 51.IN0
+QC <= 39.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 40.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Datapath_Multify_4bit:inst|74157:inst4
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+

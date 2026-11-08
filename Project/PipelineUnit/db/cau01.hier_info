@@ -1,0 +1,2940 @@
+|ver2_pipeline_au
+Q3 <= control_pipeline_AU:inst2.Q3
+Clk => control_pipeline_AU:inst2.Clk
+Clk => datapath_pipeline_au:inst.clk
+Start => control_pipeline_AU:inst2.Start
+Z[0] => datapath_pipeline_au:inst.Z[0]
+Z[1] => datapath_pipeline_au:inst.Z[1]
+Z[2] => datapath_pipeline_au:inst.Z[2]
+Z[3] => datapath_pipeline_au:inst.Z[3]
+Z[4] => datapath_pipeline_au:inst.Z[4]
+Z[5] => datapath_pipeline_au:inst.Z[5]
+Z[6] => datapath_pipeline_au:inst.Z[6]
+Z[7] => datapath_pipeline_au:inst.Z[7]
+Z[8] => datapath_pipeline_au:inst.Z[8]
+Z[9] => datapath_pipeline_au:inst.Z[9]
+Z[10] => datapath_pipeline_au:inst.Z[10]
+Z[11] => datapath_pipeline_au:inst.Z[11]
+Z[12] => datapath_pipeline_au:inst.Z[12]
+Z[13] => datapath_pipeline_au:inst.Z[13]
+Z[14] => datapath_pipeline_au:inst.Z[14]
+Z[15] => datapath_pipeline_au:inst.Z[15]
+Q2 <= control_pipeline_AU:inst2.Q2
+Q1 <= control_pipeline_AU:inst2.Q1
+Q0 <= control_pipeline_AU:inst2.Q0
+is_14 <= is14.DB_MAX_OUTPUT_PORT_TYPE
+Cos[0] <= datapath_pipeline_au:inst.Cos[0]
+Cos[1] <= datapath_pipeline_au:inst.Cos[1]
+Cos[2] <= datapath_pipeline_au:inst.Cos[2]
+Cos[3] <= datapath_pipeline_au:inst.Cos[3]
+Cos[4] <= datapath_pipeline_au:inst.Cos[4]
+Cos[5] <= datapath_pipeline_au:inst.Cos[5]
+Cos[6] <= datapath_pipeline_au:inst.Cos[6]
+Cos[7] <= datapath_pipeline_au:inst.Cos[7]
+Cos[8] <= datapath_pipeline_au:inst.Cos[8]
+Cos[9] <= datapath_pipeline_au:inst.Cos[9]
+Cos[10] <= datapath_pipeline_au:inst.Cos[10]
+Cos[11] <= datapath_pipeline_au:inst.Cos[11]
+Cos[12] <= datapath_pipeline_au:inst.Cos[12]
+Cos[13] <= datapath_pipeline_au:inst.Cos[13]
+Cos[14] <= datapath_pipeline_au:inst.Cos[14]
+Cos[15] <= datapath_pipeline_au:inst.Cos[15]
+Sin[0] <= datapath_pipeline_au:inst.Sin[0]
+Sin[1] <= datapath_pipeline_au:inst.Sin[1]
+Sin[2] <= datapath_pipeline_au:inst.Sin[2]
+Sin[3] <= datapath_pipeline_au:inst.Sin[3]
+Sin[4] <= datapath_pipeline_au:inst.Sin[4]
+Sin[5] <= datapath_pipeline_au:inst.Sin[5]
+Sin[6] <= datapath_pipeline_au:inst.Sin[6]
+Sin[7] <= datapath_pipeline_au:inst.Sin[7]
+Sin[8] <= datapath_pipeline_au:inst.Sin[8]
+Sin[9] <= datapath_pipeline_au:inst.Sin[9]
+Sin[10] <= datapath_pipeline_au:inst.Sin[10]
+Sin[11] <= datapath_pipeline_au:inst.Sin[11]
+Sin[12] <= datapath_pipeline_au:inst.Sin[12]
+Sin[13] <= datapath_pipeline_au:inst.Sin[13]
+Sin[14] <= datapath_pipeline_au:inst.Sin[14]
+Sin[15] <= datapath_pipeline_au:inst.Sin[15]
+TestB1[0] <= datapath_pipeline_au:inst.TestBus1[0]
+TestB1[1] <= datapath_pipeline_au:inst.TestBus1[1]
+TestB1[2] <= datapath_pipeline_au:inst.TestBus1[2]
+TestB1[3] <= datapath_pipeline_au:inst.TestBus1[3]
+TestB1[4] <= datapath_pipeline_au:inst.TestBus1[4]
+TestB1[5] <= datapath_pipeline_au:inst.TestBus1[5]
+TestB1[6] <= datapath_pipeline_au:inst.TestBus1[6]
+TestB1[7] <= datapath_pipeline_au:inst.TestBus1[7]
+TestB1[8] <= datapath_pipeline_au:inst.TestBus1[8]
+TestB1[9] <= datapath_pipeline_au:inst.TestBus1[9]
+TestB1[10] <= datapath_pipeline_au:inst.TestBus1[10]
+TestB1[11] <= datapath_pipeline_au:inst.TestBus1[11]
+TestB1[12] <= datapath_pipeline_au:inst.TestBus1[12]
+TestB1[13] <= datapath_pipeline_au:inst.TestBus1[13]
+TestB1[14] <= datapath_pipeline_au:inst.TestBus1[14]
+TestB1[15] <= datapath_pipeline_au:inst.TestBus1[15]
+TestB2[0] <= datapath_pipeline_au:inst.TestBus2[0]
+TestB2[1] <= datapath_pipeline_au:inst.TestBus2[1]
+TestB2[2] <= datapath_pipeline_au:inst.TestBus2[2]
+TestB2[3] <= datapath_pipeline_au:inst.TestBus2[3]
+TestB2[4] <= datapath_pipeline_au:inst.TestBus2[4]
+TestB2[5] <= datapath_pipeline_au:inst.TestBus2[5]
+TestB2[6] <= datapath_pipeline_au:inst.TestBus2[6]
+TestB2[7] <= datapath_pipeline_au:inst.TestBus2[7]
+TestB2[8] <= datapath_pipeline_au:inst.TestBus2[8]
+TestB2[9] <= datapath_pipeline_au:inst.TestBus2[9]
+TestB2[10] <= datapath_pipeline_au:inst.TestBus2[10]
+TestB2[11] <= datapath_pipeline_au:inst.TestBus2[11]
+TestB2[12] <= datapath_pipeline_au:inst.TestBus2[12]
+TestB2[13] <= datapath_pipeline_au:inst.TestBus2[13]
+TestB2[14] <= datapath_pipeline_au:inst.TestBus2[14]
+TestB2[15] <= datapath_pipeline_au:inst.TestBus2[15]
+TestB3[0] <= datapath_pipeline_au:inst.TestBus3[0]
+TestB3[1] <= datapath_pipeline_au:inst.TestBus3[1]
+TestB3[2] <= datapath_pipeline_au:inst.TestBus3[2]
+TestB3[3] <= datapath_pipeline_au:inst.TestBus3[3]
+TestB4[0] <= datapath_pipeline_au:inst.TestBus4[0]
+TestB4[1] <= datapath_pipeline_au:inst.TestBus4[1]
+TestB4[2] <= datapath_pipeline_au:inst.TestBus4[2]
+TestB4[3] <= datapath_pipeline_au:inst.TestBus4[3]
+TestB4[4] <= datapath_pipeline_au:inst.TestBus4[4]
+TestB4[5] <= datapath_pipeline_au:inst.TestBus4[5]
+TestB4[6] <= datapath_pipeline_au:inst.TestBus4[6]
+TestB4[7] <= datapath_pipeline_au:inst.TestBus4[7]
+TestB4[8] <= datapath_pipeline_au:inst.TestBus4[8]
+TestB4[9] <= datapath_pipeline_au:inst.TestBus4[9]
+TestB4[10] <= datapath_pipeline_au:inst.TestBus4[10]
+TestB4[11] <= datapath_pipeline_au:inst.TestBus4[11]
+TestB4[12] <= datapath_pipeline_au:inst.TestBus4[12]
+TestB4[13] <= datapath_pipeline_au:inst.TestBus4[13]
+TestB4[14] <= datapath_pipeline_au:inst.TestBus4[14]
+TestB4[15] <= datapath_pipeline_au:inst.TestBus4[15]
+TestB5[0] <= datapath_pipeline_au:inst.TestBus5[0]
+TestB5[1] <= datapath_pipeline_au:inst.TestBus5[1]
+TestB5[2] <= datapath_pipeline_au:inst.TestBus5[2]
+TestB5[3] <= datapath_pipeline_au:inst.TestBus5[3]
+TestB5[4] <= datapath_pipeline_au:inst.TestBus5[4]
+TestB5[5] <= datapath_pipeline_au:inst.TestBus5[5]
+TestB5[6] <= datapath_pipeline_au:inst.TestBus5[6]
+TestB5[7] <= datapath_pipeline_au:inst.TestBus5[7]
+TestB5[8] <= datapath_pipeline_au:inst.TestBus5[8]
+TestB5[9] <= datapath_pipeline_au:inst.TestBus5[9]
+TestB5[10] <= datapath_pipeline_au:inst.TestBus5[10]
+TestB5[11] <= datapath_pipeline_au:inst.TestBus5[11]
+TestB5[12] <= datapath_pipeline_au:inst.TestBus5[12]
+TestB5[13] <= datapath_pipeline_au:inst.TestBus5[13]
+TestB5[14] <= datapath_pipeline_au:inst.TestBus5[14]
+TestB5[15] <= datapath_pipeline_au:inst.TestBus5[15]
+TestB6[0] <= datapath_pipeline_au:inst.TestBus6[0]
+TestB6[1] <= datapath_pipeline_au:inst.TestBus6[1]
+TestB6[2] <= datapath_pipeline_au:inst.TestBus6[2]
+TestB6[3] <= datapath_pipeline_au:inst.TestBus6[3]
+TestB6[4] <= datapath_pipeline_au:inst.TestBus6[4]
+TestB6[5] <= datapath_pipeline_au:inst.TestBus6[5]
+TestB6[6] <= datapath_pipeline_au:inst.TestBus6[6]
+TestB6[7] <= datapath_pipeline_au:inst.TestBus6[7]
+TestB6[8] <= datapath_pipeline_au:inst.TestBus6[8]
+TestB6[9] <= datapath_pipeline_au:inst.TestBus6[9]
+TestB6[10] <= datapath_pipeline_au:inst.TestBus6[10]
+TestB6[11] <= datapath_pipeline_au:inst.TestBus6[11]
+TestB6[12] <= datapath_pipeline_au:inst.TestBus6[12]
+TestB6[13] <= datapath_pipeline_au:inst.TestBus6[13]
+TestB6[14] <= datapath_pipeline_au:inst.TestBus6[14]
+TestB6[15] <= datapath_pipeline_au:inst.TestBus6[15]
+TestR1[0] <= datapath_pipeline_au:inst.TestR1[0]
+TestR1[1] <= datapath_pipeline_au:inst.TestR1[1]
+TestR1[2] <= datapath_pipeline_au:inst.TestR1[2]
+TestR1[3] <= datapath_pipeline_au:inst.TestR1[3]
+TestR1[4] <= datapath_pipeline_au:inst.TestR1[4]
+TestR1[5] <= datapath_pipeline_au:inst.TestR1[5]
+TestR1[6] <= datapath_pipeline_au:inst.TestR1[6]
+TestR1[7] <= datapath_pipeline_au:inst.TestR1[7]
+TestR1[8] <= datapath_pipeline_au:inst.TestR1[8]
+TestR1[9] <= datapath_pipeline_au:inst.TestR1[9]
+TestR1[10] <= datapath_pipeline_au:inst.TestR1[10]
+TestR1[11] <= datapath_pipeline_au:inst.TestR1[11]
+TestR1[12] <= datapath_pipeline_au:inst.TestR1[12]
+TestR1[13] <= datapath_pipeline_au:inst.TestR1[13]
+TestR1[14] <= datapath_pipeline_au:inst.TestR1[14]
+TestR1[15] <= datapath_pipeline_au:inst.TestR1[15]
+TestR2[0] <= datapath_pipeline_au:inst.TestR2[0]
+TestR2[1] <= datapath_pipeline_au:inst.TestR2[1]
+TestR2[2] <= datapath_pipeline_au:inst.TestR2[2]
+TestR2[3] <= datapath_pipeline_au:inst.TestR2[3]
+TestR2[4] <= datapath_pipeline_au:inst.TestR2[4]
+TestR2[5] <= datapath_pipeline_au:inst.TestR2[5]
+TestR2[6] <= datapath_pipeline_au:inst.TestR2[6]
+TestR2[7] <= datapath_pipeline_au:inst.TestR2[7]
+TestR2[8] <= datapath_pipeline_au:inst.TestR2[8]
+TestR2[9] <= datapath_pipeline_au:inst.TestR2[9]
+TestR2[10] <= datapath_pipeline_au:inst.TestR2[10]
+TestR2[11] <= datapath_pipeline_au:inst.TestR2[11]
+TestR2[12] <= datapath_pipeline_au:inst.TestR2[12]
+TestR2[13] <= datapath_pipeline_au:inst.TestR2[13]
+TestR2[14] <= datapath_pipeline_au:inst.TestR2[14]
+TestR2[15] <= datapath_pipeline_au:inst.TestR2[15]
+TestR3[0] <= datapath_pipeline_au:inst.TestR3[0]
+TestR3[1] <= datapath_pipeline_au:inst.TestR3[1]
+TestR3[2] <= datapath_pipeline_au:inst.TestR3[2]
+TestR3[3] <= datapath_pipeline_au:inst.TestR3[3]
+TestR3[4] <= datapath_pipeline_au:inst.TestR3[4]
+TestR3[5] <= datapath_pipeline_au:inst.TestR3[5]
+TestR3[6] <= datapath_pipeline_au:inst.TestR3[6]
+TestR3[7] <= datapath_pipeline_au:inst.TestR3[7]
+TestR3[8] <= datapath_pipeline_au:inst.TestR3[8]
+TestR3[9] <= datapath_pipeline_au:inst.TestR3[9]
+TestR3[10] <= datapath_pipeline_au:inst.TestR3[10]
+TestR3[11] <= datapath_pipeline_au:inst.TestR3[11]
+TestR3[12] <= datapath_pipeline_au:inst.TestR3[12]
+TestR3[13] <= datapath_pipeline_au:inst.TestR3[13]
+TestR3[14] <= datapath_pipeline_au:inst.TestR3[14]
+TestR3[15] <= datapath_pipeline_au:inst.TestR3[15]
+
+
+|ver2_pipeline_au|control_pipeline_AU:inst2
+LoadR1 <= inst60.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Clk => inst1.CLK
+Clk => inst2.CLK
+Clk => inst3.CLK
+i_equal_16 => inst24.IN0
+i_equal_16 => inst29.IN0
+i_equal_16 => inst38.IN0
+i_equal_16 => inst49.IN0
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Start => inst48.IN1
+z_MSB => inst51.IN0
+z_MSB => inst23.IN1
+TriR1 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+LoadR2 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+TriR2 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+LoadR3 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+TriR3 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+LoadR4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+LoadR5 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+TriR4 <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+TriR5 <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+Sel_AU <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+TriAU <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+TriRom <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+TriShift <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+En_Cnt <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Set_Cnt <= <GND>
+RST_Cnt <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+TriInZ <= inst56.DB_MAX_OUTPUT_PORT_TYPE
+TriZero <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+TriKConst <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+TriX <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+TriY <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+TriR2_Out <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Done <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+Test => ~NO_FANOUT~
+
+
+|ver2_pipeline_au|check14:inst4
+is14 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Data[0] => inst1.IN0
+Data[1] => inst.IN2
+Data[2] => inst.IN1
+Data[3] => inst.IN0
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst
+Cos[0] <= inst61[0].DB_MAX_OUTPUT_PORT_TYPE
+Cos[1] <= inst61[1].DB_MAX_OUTPUT_PORT_TYPE
+Cos[2] <= inst61[2].DB_MAX_OUTPUT_PORT_TYPE
+Cos[3] <= inst61[3].DB_MAX_OUTPUT_PORT_TYPE
+Cos[4] <= inst61[4].DB_MAX_OUTPUT_PORT_TYPE
+Cos[5] <= inst61[5].DB_MAX_OUTPUT_PORT_TYPE
+Cos[6] <= inst61[6].DB_MAX_OUTPUT_PORT_TYPE
+Cos[7] <= inst61[7].DB_MAX_OUTPUT_PORT_TYPE
+Cos[8] <= inst61[8].DB_MAX_OUTPUT_PORT_TYPE
+Cos[9] <= inst61[9].DB_MAX_OUTPUT_PORT_TYPE
+Cos[10] <= inst61[10].DB_MAX_OUTPUT_PORT_TYPE
+Cos[11] <= inst61[11].DB_MAX_OUTPUT_PORT_TYPE
+Cos[12] <= inst61[12].DB_MAX_OUTPUT_PORT_TYPE
+Cos[13] <= inst61[13].DB_MAX_OUTPUT_PORT_TYPE
+Cos[14] <= inst61[14].DB_MAX_OUTPUT_PORT_TYPE
+Cos[15] <= inst61[15].DB_MAX_OUTPUT_PORT_TYPE
+Load_R1 => register_16_bit:inst.Load_EN
+clk => register_16_bit:inst.CLK
+clk => Add_Sub_16bit_Pipeline_2Stage:inst6.clk
+clk => register_16_bit:inst1.CLK
+clk => Up_Counter:inst5.CLK
+clk => register_16_bit:inst3.CLK
+clk => register_16_bit:inst4.CLK
+clk => register_16_bit:inst2.CLK
+TriKConst => inst62[15].OE
+TriKConst => inst62[14].OE
+TriKConst => inst62[13].OE
+TriKConst => inst62[12].OE
+TriKConst => inst62[11].OE
+TriKConst => inst62[10].OE
+TriKConst => inst62[9].OE
+TriKConst => inst62[8].OE
+TriKConst => inst62[7].OE
+TriKConst => inst62[6].OE
+TriKConst => inst62[5].OE
+TriKConst => inst62[4].OE
+TriKConst => inst62[3].OE
+TriKConst => inst62[2].OE
+TriKConst => inst62[1].OE
+TriKConst => inst62[0].OE
+Sel_AU => Add_Sub_16bit_Pipeline_2Stage:inst6.S
+Load_R2 => register_16_bit:inst1.Load_EN
+TriAU => inst82[15].OE
+TriAU => inst82[14].OE
+TriAU => inst82[13].OE
+TriAU => inst82[12].OE
+TriAU => inst82[11].OE
+TriAU => inst82[10].OE
+TriAU => inst82[9].OE
+TriAU => inst82[8].OE
+TriAU => inst82[7].OE
+TriAU => inst82[6].OE
+TriAU => inst82[5].OE
+TriAU => inst82[4].OE
+TriAU => inst82[3].OE
+TriAU => inst82[2].OE
+TriAU => inst82[1].OE
+TriAU => inst82[0].OE
+TriAU => inst63[15].OE
+TriAU => inst63[14].OE
+TriAU => inst63[13].OE
+TriAU => inst63[12].OE
+TriAU => inst63[11].OE
+TriAU => inst63[10].OE
+TriAU => inst63[9].OE
+TriAU => inst63[8].OE
+TriAU => inst63[7].OE
+TriAU => inst63[6].OE
+TriAU => inst63[5].OE
+TriAU => inst63[4].OE
+TriAU => inst63[3].OE
+TriAU => inst63[2].OE
+TriAU => inst63[1].OE
+TriAU => inst63[0].OE
+TriAU => inst80[15].OE
+TriAU => inst80[14].OE
+TriAU => inst80[13].OE
+TriAU => inst80[12].OE
+TriAU => inst80[11].OE
+TriAU => inst80[10].OE
+TriAU => inst80[9].OE
+TriAU => inst80[8].OE
+TriAU => inst80[7].OE
+TriAU => inst80[6].OE
+TriAU => inst80[5].OE
+TriAU => inst80[4].OE
+TriAU => inst80[3].OE
+TriAU => inst80[2].OE
+TriAU => inst80[1].OE
+TriAU => inst80[0].OE
+TriZero => inst65[15].OE
+TriZero => inst65[14].OE
+TriZero => inst65[13].OE
+TriZero => inst65[12].OE
+TriZero => inst65[11].OE
+TriZero => inst65[10].OE
+TriZero => inst65[9].OE
+TriZero => inst65[8].OE
+TriZero => inst65[7].OE
+TriZero => inst65[6].OE
+TriZero => inst65[5].OE
+TriZero => inst65[4].OE
+TriZero => inst65[3].OE
+TriZero => inst65[2].OE
+TriZero => inst65[1].OE
+TriZero => inst65[0].OE
+TriR2_Out => inst73[15].OE
+TriR2_Out => inst73[14].OE
+TriR2_Out => inst73[13].OE
+TriR2_Out => inst73[12].OE
+TriR2_Out => inst73[11].OE
+TriR2_Out => inst73[10].OE
+TriR2_Out => inst73[9].OE
+TriR2_Out => inst73[8].OE
+TriR2_Out => inst73[7].OE
+TriR2_Out => inst73[6].OE
+TriR2_Out => inst73[5].OE
+TriR2_Out => inst73[4].OE
+TriR2_Out => inst73[3].OE
+TriR2_Out => inst73[2].OE
+TriR2_Out => inst73[1].OE
+TriR2_Out => inst73[0].OE
+En_Cnt => Up_Counter:inst5.E
+Set_Cnt => Up_Counter:inst5.Set
+RST_Cnt => Up_Counter:inst5.Reset
+TriRom => inst64[15].OE
+TriRom => inst64[14].OE
+TriRom => inst64[13].OE
+TriRom => inst64[12].OE
+TriRom => inst64[11].OE
+TriRom => inst64[10].OE
+TriRom => inst64[9].OE
+TriRom => inst64[8].OE
+TriRom => inst64[7].OE
+TriRom => inst64[6].OE
+TriRom => inst64[5].OE
+TriRom => inst64[4].OE
+TriRom => inst64[3].OE
+TriRom => inst64[2].OE
+TriRom => inst64[1].OE
+TriRom => inst64[0].OE
+Load_R4 => register_16_bit:inst3.Load_EN
+TriR4 => inst71[15].OE
+TriR4 => inst71[14].OE
+TriR4 => inst71[13].OE
+TriR4 => inst71[12].OE
+TriR4 => inst71[11].OE
+TriR4 => inst71[10].OE
+TriR4 => inst71[9].OE
+TriR4 => inst71[8].OE
+TriR4 => inst71[7].OE
+TriR4 => inst71[6].OE
+TriR4 => inst71[5].OE
+TriR4 => inst71[4].OE
+TriR4 => inst71[3].OE
+TriR4 => inst71[2].OE
+TriR4 => inst71[1].OE
+TriR4 => inst71[0].OE
+Load_R5 => register_16_bit:inst4.Load_EN
+TriR5 => inst72[15].OE
+TriR5 => inst72[14].OE
+TriR5 => inst72[13].OE
+TriR5 => inst72[12].OE
+TriR5 => inst72[11].OE
+TriR5 => inst72[10].OE
+TriR5 => inst72[9].OE
+TriR5 => inst72[8].OE
+TriR5 => inst72[7].OE
+TriR5 => inst72[6].OE
+TriR5 => inst72[5].OE
+TriR5 => inst72[4].OE
+TriR5 => inst72[3].OE
+TriR5 => inst72[2].OE
+TriR5 => inst72[1].OE
+TriR5 => inst72[0].OE
+TriShift => inst66[15].OE
+TriShift => inst66[14].OE
+TriShift => inst66[13].OE
+TriShift => inst66[12].OE
+TriShift => inst66[11].OE
+TriShift => inst66[10].OE
+TriShift => inst66[9].OE
+TriShift => inst66[8].OE
+TriShift => inst66[7].OE
+TriShift => inst66[6].OE
+TriShift => inst66[5].OE
+TriShift => inst66[4].OE
+TriShift => inst66[3].OE
+TriShift => inst66[2].OE
+TriShift => inst66[1].OE
+TriShift => inst66[0].OE
+TriR1 => inst68[15].OE
+TriR1 => inst68[14].OE
+TriR1 => inst68[13].OE
+TriR1 => inst68[12].OE
+TriR1 => inst68[11].OE
+TriR1 => inst68[10].OE
+TriR1 => inst68[9].OE
+TriR1 => inst68[8].OE
+TriR1 => inst68[7].OE
+TriR1 => inst68[6].OE
+TriR1 => inst68[5].OE
+TriR1 => inst68[4].OE
+TriR1 => inst68[3].OE
+TriR1 => inst68[2].OE
+TriR1 => inst68[1].OE
+TriR1 => inst68[0].OE
+TriR2 => inst69[15].OE
+TriR2 => inst69[14].OE
+TriR2 => inst69[13].OE
+TriR2 => inst69[12].OE
+TriR2 => inst69[11].OE
+TriR2 => inst69[10].OE
+TriR2 => inst69[9].OE
+TriR2 => inst69[8].OE
+TriR2 => inst69[7].OE
+TriR2 => inst69[6].OE
+TriR2 => inst69[5].OE
+TriR2 => inst69[4].OE
+TriR2 => inst69[3].OE
+TriR2 => inst69[2].OE
+TriR2 => inst69[1].OE
+TriR2 => inst69[0].OE
+Load_R3 => register_16_bit:inst2.Load_EN
+Z[0] => inst67[0].DATAIN
+Z[1] => inst67[1].DATAIN
+Z[2] => inst67[2].DATAIN
+Z[3] => inst67[3].DATAIN
+Z[4] => inst67[4].DATAIN
+Z[5] => inst67[5].DATAIN
+Z[6] => inst67[6].DATAIN
+Z[7] => inst67[7].DATAIN
+Z[8] => inst67[8].DATAIN
+Z[9] => inst67[9].DATAIN
+Z[10] => inst67[10].DATAIN
+Z[11] => inst67[11].DATAIN
+Z[12] => inst67[12].DATAIN
+Z[13] => inst67[13].DATAIN
+Z[14] => inst67[14].DATAIN
+Z[15] => inst67[15].DATAIN
+TriInZ => inst67[15].OE
+TriInZ => inst67[14].OE
+TriInZ => inst67[13].OE
+TriInZ => inst67[12].OE
+TriInZ => inst67[11].OE
+TriInZ => inst67[10].OE
+TriInZ => inst67[9].OE
+TriInZ => inst67[8].OE
+TriInZ => inst67[7].OE
+TriInZ => inst67[6].OE
+TriInZ => inst67[5].OE
+TriInZ => inst67[4].OE
+TriInZ => inst67[3].OE
+TriInZ => inst67[2].OE
+TriInZ => inst67[1].OE
+TriInZ => inst67[0].OE
+TriR3 => inst70[15].OE
+TriR3 => inst70[14].OE
+TriR3 => inst70[13].OE
+TriR3 => inst70[12].OE
+TriR3 => inst70[11].OE
+TriR3 => inst70[10].OE
+TriR3 => inst70[9].OE
+TriR3 => inst70[8].OE
+TriR3 => inst70[7].OE
+TriR3 => inst70[6].OE
+TriR3 => inst70[5].OE
+TriR3 => inst70[4].OE
+TriR3 => inst70[3].OE
+TriR3 => inst70[2].OE
+TriR3 => inst70[1].OE
+TriR3 => inst70[0].OE
+TriX => inst61[15].OE
+TriX => inst61[14].OE
+TriX => inst61[13].OE
+TriX => inst61[12].OE
+TriX => inst61[11].OE
+TriX => inst61[10].OE
+TriX => inst61[9].OE
+TriX => inst61[8].OE
+TriX => inst61[7].OE
+TriX => inst61[6].OE
+TriX => inst61[5].OE
+TriX => inst61[4].OE
+TriX => inst61[3].OE
+TriX => inst61[2].OE
+TriX => inst61[1].OE
+TriX => inst61[0].OE
+i[0] <= Bus3[0].DB_MAX_OUTPUT_PORT_TYPE
+i[1] <= Bus3[1].DB_MAX_OUTPUT_PORT_TYPE
+i[2] <= Bus3[2].DB_MAX_OUTPUT_PORT_TYPE
+i[3] <= Bus3[3].DB_MAX_OUTPUT_PORT_TYPE
+Sin[0] <= inst60[0].DB_MAX_OUTPUT_PORT_TYPE
+Sin[1] <= inst60[1].DB_MAX_OUTPUT_PORT_TYPE
+Sin[2] <= inst60[2].DB_MAX_OUTPUT_PORT_TYPE
+Sin[3] <= inst60[3].DB_MAX_OUTPUT_PORT_TYPE
+Sin[4] <= inst60[4].DB_MAX_OUTPUT_PORT_TYPE
+Sin[5] <= inst60[5].DB_MAX_OUTPUT_PORT_TYPE
+Sin[6] <= inst60[6].DB_MAX_OUTPUT_PORT_TYPE
+Sin[7] <= inst60[7].DB_MAX_OUTPUT_PORT_TYPE
+Sin[8] <= inst60[8].DB_MAX_OUTPUT_PORT_TYPE
+Sin[9] <= inst60[9].DB_MAX_OUTPUT_PORT_TYPE
+Sin[10] <= inst60[10].DB_MAX_OUTPUT_PORT_TYPE
+Sin[11] <= inst60[11].DB_MAX_OUTPUT_PORT_TYPE
+Sin[12] <= inst60[12].DB_MAX_OUTPUT_PORT_TYPE
+Sin[13] <= inst60[13].DB_MAX_OUTPUT_PORT_TYPE
+Sin[14] <= inst60[14].DB_MAX_OUTPUT_PORT_TYPE
+Sin[15] <= inst60[15].DB_MAX_OUTPUT_PORT_TYPE
+TriY => inst60[15].OE
+TriY => inst60[14].OE
+TriY => inst60[13].OE
+TriY => inst60[12].OE
+TriY => inst60[11].OE
+TriY => inst60[10].OE
+TriY => inst60[9].OE
+TriY => inst60[8].OE
+TriY => inst60[7].OE
+TriY => inst60[6].OE
+TriY => inst60[5].OE
+TriY => inst60[4].OE
+TriY => inst60[3].OE
+TriY => inst60[2].OE
+TriY => inst60[1].OE
+TriY => inst60[0].OE
+TestBus1[0] <= Bus1[0].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[1] <= Bus1[1].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[2] <= Bus1[2].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[3] <= Bus1[3].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[4] <= Bus1[4].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[5] <= Bus1[5].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[6] <= Bus1[6].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[7] <= Bus1[7].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[8] <= Bus1[8].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[9] <= Bus1[9].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[10] <= Bus1[10].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[11] <= Bus1[11].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[12] <= Bus1[12].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[13] <= Bus1[13].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[14] <= Bus1[14].DB_MAX_OUTPUT_PORT_TYPE
+TestBus1[15] <= Bus1[15].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[0] <= Bus2[0].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[1] <= Bus2[1].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[2] <= Bus2[2].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[3] <= Bus2[3].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[4] <= Bus2[4].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[5] <= Bus2[5].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[6] <= Bus2[6].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[7] <= Bus2[7].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[8] <= Bus2[8].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[9] <= Bus2[9].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[10] <= Bus2[10].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[11] <= Bus2[11].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[12] <= Bus2[12].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[13] <= Bus2[13].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[14] <= Bus2[14].DB_MAX_OUTPUT_PORT_TYPE
+TestBus2[15] <= Bus2[15].DB_MAX_OUTPUT_PORT_TYPE
+TestBus3[0] <= Bus3[0].DB_MAX_OUTPUT_PORT_TYPE
+TestBus3[1] <= Bus3[1].DB_MAX_OUTPUT_PORT_TYPE
+TestBus3[2] <= Bus3[2].DB_MAX_OUTPUT_PORT_TYPE
+TestBus3[3] <= Bus3[3].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[0] <= Bus4[0].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[1] <= Bus4[1].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[2] <= Bus4[2].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[3] <= Bus4[3].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[4] <= Bus4[4].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[5] <= Bus4[5].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[6] <= Bus4[6].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[7] <= Bus4[7].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[8] <= Bus4[8].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[9] <= Bus4[9].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[10] <= Bus4[10].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[11] <= Bus4[11].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[12] <= Bus4[12].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[13] <= Bus4[13].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[14] <= Bus4[14].DB_MAX_OUTPUT_PORT_TYPE
+TestBus4[15] <= Bus4[15].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[0] <= Bus5[0].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[1] <= Bus5[1].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[2] <= Bus5[2].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[3] <= Bus5[3].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[4] <= Bus5[4].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[5] <= Bus5[5].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[6] <= Bus5[6].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[7] <= Bus5[7].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[8] <= Bus5[8].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[9] <= Bus5[9].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[10] <= Bus5[10].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[11] <= Bus5[11].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[12] <= Bus5[12].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[13] <= Bus5[13].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[14] <= Bus5[14].DB_MAX_OUTPUT_PORT_TYPE
+TestBus5[15] <= Bus5[15].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[0] <= Bus6[0].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[1] <= Bus6[1].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[2] <= Bus6[2].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[3] <= Bus6[3].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[4] <= Bus6[4].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[5] <= Bus6[5].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[6] <= Bus6[6].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[7] <= Bus6[7].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[8] <= Bus6[8].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[9] <= Bus6[9].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[10] <= Bus6[10].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[11] <= Bus6[11].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[12] <= Bus6[12].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[13] <= Bus6[13].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[14] <= Bus6[14].DB_MAX_OUTPUT_PORT_TYPE
+TestBus6[15] <= Bus6[15].DB_MAX_OUTPUT_PORT_TYPE
+TestR1[0] <= register_16_bit:inst.Q[0]
+TestR1[1] <= register_16_bit:inst.Q[1]
+TestR1[2] <= register_16_bit:inst.Q[2]
+TestR1[3] <= register_16_bit:inst.Q[3]
+TestR1[4] <= register_16_bit:inst.Q[4]
+TestR1[5] <= register_16_bit:inst.Q[5]
+TestR1[6] <= register_16_bit:inst.Q[6]
+TestR1[7] <= register_16_bit:inst.Q[7]
+TestR1[8] <= register_16_bit:inst.Q[8]
+TestR1[9] <= register_16_bit:inst.Q[9]
+TestR1[10] <= register_16_bit:inst.Q[10]
+TestR1[11] <= register_16_bit:inst.Q[11]
+TestR1[12] <= register_16_bit:inst.Q[12]
+TestR1[13] <= register_16_bit:inst.Q[13]
+TestR1[14] <= register_16_bit:inst.Q[14]
+TestR1[15] <= register_16_bit:inst.Q[15]
+TestR2[0] <= register_16_bit:inst1.Q[0]
+TestR2[1] <= register_16_bit:inst1.Q[1]
+TestR2[2] <= register_16_bit:inst1.Q[2]
+TestR2[3] <= register_16_bit:inst1.Q[3]
+TestR2[4] <= register_16_bit:inst1.Q[4]
+TestR2[5] <= register_16_bit:inst1.Q[5]
+TestR2[6] <= register_16_bit:inst1.Q[6]
+TestR2[7] <= register_16_bit:inst1.Q[7]
+TestR2[8] <= register_16_bit:inst1.Q[8]
+TestR2[9] <= register_16_bit:inst1.Q[9]
+TestR2[10] <= register_16_bit:inst1.Q[10]
+TestR2[11] <= register_16_bit:inst1.Q[11]
+TestR2[12] <= register_16_bit:inst1.Q[12]
+TestR2[13] <= register_16_bit:inst1.Q[13]
+TestR2[14] <= register_16_bit:inst1.Q[14]
+TestR2[15] <= register_16_bit:inst1.Q[15]
+TestR3[0] <= register_16_bit:inst2.Q[0]
+TestR3[1] <= register_16_bit:inst2.Q[1]
+TestR3[2] <= register_16_bit:inst2.Q[2]
+TestR3[3] <= register_16_bit:inst2.Q[3]
+TestR3[4] <= register_16_bit:inst2.Q[4]
+TestR3[5] <= register_16_bit:inst2.Q[5]
+TestR3[6] <= register_16_bit:inst2.Q[6]
+TestR3[7] <= register_16_bit:inst2.Q[7]
+TestR3[8] <= register_16_bit:inst2.Q[8]
+TestR3[9] <= register_16_bit:inst2.Q[9]
+TestR3[10] <= register_16_bit:inst2.Q[10]
+TestR3[11] <= register_16_bit:inst2.Q[11]
+TestR3[12] <= register_16_bit:inst2.Q[12]
+TestR3[13] <= register_16_bit:inst2.Q[13]
+TestR3[14] <= register_16_bit:inst2.Q[14]
+TestR3[15] <= register_16_bit:inst2.Q[15]
+z_value[0] <= register_16_bit:inst2.Q[0]
+z_value[1] <= register_16_bit:inst2.Q[1]
+z_value[2] <= register_16_bit:inst2.Q[2]
+z_value[3] <= register_16_bit:inst2.Q[3]
+z_value[4] <= register_16_bit:inst2.Q[4]
+z_value[5] <= register_16_bit:inst2.Q[5]
+z_value[6] <= register_16_bit:inst2.Q[6]
+z_value[7] <= register_16_bit:inst2.Q[7]
+z_value[8] <= register_16_bit:inst2.Q[8]
+z_value[9] <= register_16_bit:inst2.Q[9]
+z_value[10] <= register_16_bit:inst2.Q[10]
+z_value[11] <= register_16_bit:inst2.Q[11]
+z_value[12] <= register_16_bit:inst2.Q[12]
+z_value[13] <= register_16_bit:inst2.Q[13]
+z_value[14] <= register_16_bit:inst2.Q[14]
+z_value[15] <= register_16_bit:inst2.Q[15]
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst4.CLK
+CLK => inst5.CLK
+CLK => inst6.CLK
+CLK => inst7.CLK
+CLK => inst16.CLK
+CLK => inst18.CLK
+CLK => inst19.CLK
+CLK => inst20.CLK
+CLK => inst21.CLK
+CLK => inst22.CLK
+CLK => inst23.CLK
+CLK => inst31.CLK
+Load_EN => MUX2_1:inst9.S
+Load_EN => MUX2_1:inst8.S
+Load_EN => MUX2_1:inst10.S
+Load_EN => MUX2_1:inst11.S
+Load_EN => MUX2_1:inst12.S
+Load_EN => MUX2_1:inst13.S
+Load_EN => MUX2_1:inst14.S
+Load_EN => MUX2_1:inst15.S
+Load_EN => MUX2_1:inst24.S
+Load_EN => MUX2_1:inst25.S
+Load_EN => MUX2_1:inst26.S
+Load_EN => MUX2_1:inst27.S
+Load_EN => MUX2_1:inst28.S
+Load_EN => MUX2_1:inst29.S
+Load_EN => MUX2_1:inst30.S
+Load_EN => MUX2_1:inst32.S
+D[0] => MUX2_1:inst8.B
+D[1] => MUX2_1:inst9.B
+D[2] => MUX2_1:inst10.B
+D[3] => MUX2_1:inst11.B
+D[4] => MUX2_1:inst12.B
+D[5] => MUX2_1:inst13.B
+D[6] => MUX2_1:inst14.B
+D[7] => MUX2_1:inst15.B
+D[8] => MUX2_1:inst24.B
+D[9] => MUX2_1:inst25.B
+D[10] => MUX2_1:inst26.B
+D[11] => MUX2_1:inst27.B
+D[12] => MUX2_1:inst28.B
+D[13] => MUX2_1:inst29.B
+D[14] => MUX2_1:inst30.B
+D[15] => MUX2_1:inst32.B
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst9
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst8
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst10
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst11
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst12
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst13
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst14
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst15
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst24
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst25
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst26
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst27
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst28
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst29
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst30
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst|MUX2_1:inst32
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|K_const:inst12
+Y[0] <= <VCC>
+Y[1] <= <VCC>
+Y[2] <= <VCC>
+Y[3] <= <VCC>
+Y[4] <= <GND>
+Y[5] <= <VCC>
+Y[6] <= <VCC>
+Y[7] <= <GND>
+Y[8] <= <VCC>
+Y[9] <= <VCC>
+Y[10] <= <GND>
+Y[11] <= <GND>
+Y[12] <= <VCC>
+Y[13] <= <GND>
+Y[14] <= <GND>
+Y[15] <= <GND>
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6
+Result[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Result[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Result[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Result[3] <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+Result[4] <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+Result[5] <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+Result[6] <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+Result[7] <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+Result[8] <= FA_8bit:inst25.S0
+Result[9] <= FA_8bit:inst25.S1
+Result[10] <= FA_8bit:inst25.S2
+Result[11] <= FA_8bit:inst25.S3
+Result[12] <= FA_8bit:inst25.S4
+Result[13] <= FA_8bit:inst25.S5
+Result[14] <= FA_8bit:inst25.S6
+Result[15] <= FA_8bit:inst25.S7
+clk => inst1.CLK
+clk => inst2.CLK
+clk => inst3.CLK
+clk => inst38.CLK
+clk => inst39.CLK
+clk => inst40.CLK
+clk => inst41.CLK
+clk => inst42.CLK
+clk => inst43.CLK
+clk => inst51.CLK
+clk => inst55.CLK
+clk => inst44.CLK
+clk => inst52.CLK
+clk => inst45.CLK
+clk => inst56.CLK
+clk => inst46.CLK
+clk => inst47.CLK
+clk => inst53.CLK
+clk => inst57.CLK
+clk => inst48.CLK
+clk => inst54.CLK
+clk => inst49.CLK
+clk => inst58.CLK
+clk => inst50.CLK
+clk => inst.CLK
+In_A[0] => FA_8bit:inst11.A0
+In_A[1] => FA_8bit:inst11.A1
+In_A[2] => FA_8bit:inst11.A2
+In_A[3] => FA_8bit:inst11.A3
+In_A[4] => FA_8bit:inst11.A4
+In_A[5] => FA_8bit:inst11.A5
+In_A[6] => FA_8bit:inst11.A6
+In_A[7] => FA_8bit:inst11.A7
+In_A[8] => inst43.DATAIN
+In_A[9] => inst44.DATAIN
+In_A[10] => inst45.DATAIN
+In_A[11] => inst46.DATAIN
+In_A[12] => inst47.DATAIN
+In_A[13] => inst48.DATAIN
+In_A[14] => inst49.DATAIN
+In_A[15] => inst50.DATAIN
+S => MUX2_1:inst4.S
+S => MUX2_1:inst7.S
+S => MUX2_1:inst15.S
+S => MUX2_1:inst19.S
+S => MUX2_1:inst12.S
+S => MUX2_1:inst23.S
+S => MUX2_1:inst27.S
+S => MUX2_1:inst31.S
+S => FA_8bit:inst11.Carry_In
+S => MUX2_1:inst6.S
+S => MUX2_1:inst10.S
+S => MUX2_1:inst17.S
+S => MUX2_1:inst21.S
+S => MUX2_1:inst26.S
+S => MUX2_1:inst30.S
+S => MUX2_1:inst34.S
+S => MUX2_1:inst36.S
+In_B[0] => MUX2_1:inst4.A
+In_B[0] => inst5.IN0
+In_B[1] => MUX2_1:inst7.A
+In_B[1] => inst9.IN0
+In_B[2] => MUX2_1:inst15.A
+In_B[2] => inst16.IN0
+In_B[3] => MUX2_1:inst19.A
+In_B[3] => inst20.IN0
+In_B[4] => MUX2_1:inst12.A
+In_B[4] => inst13.IN0
+In_B[5] => MUX2_1:inst23.A
+In_B[5] => inst24.IN0
+In_B[6] => MUX2_1:inst27.A
+In_B[6] => inst28.IN0
+In_B[7] => MUX2_1:inst31.A
+In_B[7] => inst32.IN0
+In_B[8] => MUX2_1:inst6.A
+In_B[8] => inst8.IN0
+In_B[9] => MUX2_1:inst10.A
+In_B[9] => inst14.IN0
+In_B[10] => MUX2_1:inst17.A
+In_B[10] => inst18.IN0
+In_B[11] => MUX2_1:inst21.A
+In_B[11] => inst22.IN0
+In_B[12] => MUX2_1:inst26.A
+In_B[12] => inst29.IN0
+In_B[13] => MUX2_1:inst30.A
+In_B[13] => inst33.IN0
+In_B[14] => MUX2_1:inst34.A
+In_B[14] => inst35.IN0
+In_B[15] => MUX2_1:inst36.A
+In_B[15] => inst37.IN0
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst11
+S0 <= FullAdder:inst.Tong
+Carry_In => FullAdder:inst.Cin
+A0 => FullAdder:inst.A
+B0 => FullAdder:inst.B
+S1 <= FullAdder:inst16.Tong
+A1 => FullAdder:inst16.A
+B1 => FullAdder:inst16.B
+S2 <= FullAdder:inst17.Tong
+A2 => FullAdder:inst17.A
+B2 => FullAdder:inst17.B
+S3 <= FullAdder:inst18.Tong
+A3 => FullAdder:inst18.A
+B3 => FullAdder:inst18.B
+Carry_Out <= FullAdder:inst21.Nho
+A4 => FullAdder:inst2.A
+B4 => FullAdder:inst2.B
+A5 => FullAdder:inst19.A
+B5 => FullAdder:inst19.B
+A6 => FullAdder:inst20.A
+B6 => FullAdder:inst20.B
+A7 => FullAdder:inst21.A
+B7 => FullAdder:inst21.B
+Overflow <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= FullAdder:inst2.Tong
+S5 <= FullAdder:inst19.Tong
+S6 <= FullAdder:inst20.Tong
+S7 <= FullAdder:inst21.Tong
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst11|FullAdder:inst
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst11|FullAdder:inst16
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst11|FullAdder:inst17
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst11|FullAdder:inst18
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst11|FullAdder:inst21
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst11|FullAdder:inst20
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst11|FullAdder:inst19
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst11|FullAdder:inst2
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst4
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst7
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst15
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst19
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst12
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst23
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst27
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst31
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst25
+S0 <= FullAdder:inst.Tong
+Carry_In => FullAdder:inst.Cin
+A0 => FullAdder:inst.A
+B0 => FullAdder:inst.B
+S1 <= FullAdder:inst16.Tong
+A1 => FullAdder:inst16.A
+B1 => FullAdder:inst16.B
+S2 <= FullAdder:inst17.Tong
+A2 => FullAdder:inst17.A
+B2 => FullAdder:inst17.B
+S3 <= FullAdder:inst18.Tong
+A3 => FullAdder:inst18.A
+B3 => FullAdder:inst18.B
+Carry_Out <= FullAdder:inst21.Nho
+A4 => FullAdder:inst2.A
+B4 => FullAdder:inst2.B
+A5 => FullAdder:inst19.A
+B5 => FullAdder:inst19.B
+A6 => FullAdder:inst20.A
+B6 => FullAdder:inst20.B
+A7 => FullAdder:inst21.A
+B7 => FullAdder:inst21.B
+Overflow <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= FullAdder:inst2.Tong
+S5 <= FullAdder:inst19.Tong
+S6 <= FullAdder:inst20.Tong
+S7 <= FullAdder:inst21.Tong
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst25|FullAdder:inst
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst25|FullAdder:inst16
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst25|FullAdder:inst17
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst25|FullAdder:inst18
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst25|FullAdder:inst21
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst25|FullAdder:inst20
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst25|FullAdder:inst19
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|FA_8bit:inst25|FullAdder:inst2
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst.IN0
+Cin => inst4.IN1
+A => inst.IN1
+A => inst3.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst3.IN1
+B => inst2.IN1
+Nho <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst6
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst10
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst17
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst21
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst26
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst30
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst34
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Add_Sub_16bit_Pipeline_2Stage:inst6|MUX2_1:inst36
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst4.CLK
+CLK => inst5.CLK
+CLK => inst6.CLK
+CLK => inst7.CLK
+CLK => inst16.CLK
+CLK => inst18.CLK
+CLK => inst19.CLK
+CLK => inst20.CLK
+CLK => inst21.CLK
+CLK => inst22.CLK
+CLK => inst23.CLK
+CLK => inst31.CLK
+Load_EN => MUX2_1:inst9.S
+Load_EN => MUX2_1:inst8.S
+Load_EN => MUX2_1:inst10.S
+Load_EN => MUX2_1:inst11.S
+Load_EN => MUX2_1:inst12.S
+Load_EN => MUX2_1:inst13.S
+Load_EN => MUX2_1:inst14.S
+Load_EN => MUX2_1:inst15.S
+Load_EN => MUX2_1:inst24.S
+Load_EN => MUX2_1:inst25.S
+Load_EN => MUX2_1:inst26.S
+Load_EN => MUX2_1:inst27.S
+Load_EN => MUX2_1:inst28.S
+Load_EN => MUX2_1:inst29.S
+Load_EN => MUX2_1:inst30.S
+Load_EN => MUX2_1:inst32.S
+D[0] => MUX2_1:inst8.B
+D[1] => MUX2_1:inst9.B
+D[2] => MUX2_1:inst10.B
+D[3] => MUX2_1:inst11.B
+D[4] => MUX2_1:inst12.B
+D[5] => MUX2_1:inst13.B
+D[6] => MUX2_1:inst14.B
+D[7] => MUX2_1:inst15.B
+D[8] => MUX2_1:inst24.B
+D[9] => MUX2_1:inst25.B
+D[10] => MUX2_1:inst26.B
+D[11] => MUX2_1:inst27.B
+D[12] => MUX2_1:inst28.B
+D[13] => MUX2_1:inst29.B
+D[14] => MUX2_1:inst30.B
+D[15] => MUX2_1:inst32.B
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst9
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst8
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst10
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst11
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst12
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst13
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst14
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst15
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst24
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst25
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst26
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst27
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst28
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst29
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst30
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst1|MUX2_1:inst32
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Zero_Const:inst21
+Y[0] <= <GND>
+Y[1] <= <GND>
+Y[2] <= <GND>
+Y[3] <= <GND>
+Y[4] <= <GND>
+Y[5] <= <GND>
+Y[6] <= <GND>
+Y[7] <= <GND>
+Y[8] <= <GND>
+Y[9] <= <GND>
+Y[10] <= <GND>
+Y[11] <= <GND>
+Y[12] <= <GND>
+Y[13] <= <GND>
+Y[14] <= <GND>
+Y[15] <= <GND>
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|rom16_16_verilog:inst14
+addr[0] => Decoder0.IN3
+addr[1] => Decoder0.IN2
+addr[1] => Decoder1.IN2
+addr[2] => Decoder0.IN1
+addr[2] => Decoder1.IN1
+addr[3] => Decoder0.IN0
+addr[3] => Decoder1.IN0
+data[0] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= data~1.DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+data[7] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+data[8] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+data[9] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+data[10] <= data~0.DB_MAX_OUTPUT_PORT_TYPE
+data[11] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+data[12] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+data[13] <= <GND>
+data[14] <= <GND>
+data[15] <= <GND>
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Up_Counter:inst5
+CarryOut <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Set => inst10.IN0
+Set => inst8.IN0
+E => HA:inst.A
+Q[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst9.IN0
+CLK => inst4.CLK
+CLK => inst5.CLK
+CLK => inst6.CLK
+CLK => inst7.CLK
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Up_Counter:inst5|HA:inst3
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst2.IN1
+Nho <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Up_Counter:inst5|HA:inst2
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst2.IN1
+Nho <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Up_Counter:inst5|HA:inst1
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst2.IN1
+Nho <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Up_Counter:inst5|HA:inst
+Tong <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst2.IN0
+B => inst1.IN1
+B => inst2.IN1
+Nho <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst4.CLK
+CLK => inst5.CLK
+CLK => inst6.CLK
+CLK => inst7.CLK
+CLK => inst16.CLK
+CLK => inst18.CLK
+CLK => inst19.CLK
+CLK => inst20.CLK
+CLK => inst21.CLK
+CLK => inst22.CLK
+CLK => inst23.CLK
+CLK => inst31.CLK
+Load_EN => MUX2_1:inst9.S
+Load_EN => MUX2_1:inst8.S
+Load_EN => MUX2_1:inst10.S
+Load_EN => MUX2_1:inst11.S
+Load_EN => MUX2_1:inst12.S
+Load_EN => MUX2_1:inst13.S
+Load_EN => MUX2_1:inst14.S
+Load_EN => MUX2_1:inst15.S
+Load_EN => MUX2_1:inst24.S
+Load_EN => MUX2_1:inst25.S
+Load_EN => MUX2_1:inst26.S
+Load_EN => MUX2_1:inst27.S
+Load_EN => MUX2_1:inst28.S
+Load_EN => MUX2_1:inst29.S
+Load_EN => MUX2_1:inst30.S
+Load_EN => MUX2_1:inst32.S
+D[0] => MUX2_1:inst8.B
+D[1] => MUX2_1:inst9.B
+D[2] => MUX2_1:inst10.B
+D[3] => MUX2_1:inst11.B
+D[4] => MUX2_1:inst12.B
+D[5] => MUX2_1:inst13.B
+D[6] => MUX2_1:inst14.B
+D[7] => MUX2_1:inst15.B
+D[8] => MUX2_1:inst24.B
+D[9] => MUX2_1:inst25.B
+D[10] => MUX2_1:inst26.B
+D[11] => MUX2_1:inst27.B
+D[12] => MUX2_1:inst28.B
+D[13] => MUX2_1:inst29.B
+D[14] => MUX2_1:inst30.B
+D[15] => MUX2_1:inst32.B
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst9
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst8
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst10
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst11
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst12
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst13
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst14
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst15
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst24
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst25
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst26
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst27
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst28
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst29
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst30
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst3|MUX2_1:inst32
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst4.CLK
+CLK => inst5.CLK
+CLK => inst6.CLK
+CLK => inst7.CLK
+CLK => inst16.CLK
+CLK => inst18.CLK
+CLK => inst19.CLK
+CLK => inst20.CLK
+CLK => inst21.CLK
+CLK => inst22.CLK
+CLK => inst23.CLK
+CLK => inst31.CLK
+Load_EN => MUX2_1:inst9.S
+Load_EN => MUX2_1:inst8.S
+Load_EN => MUX2_1:inst10.S
+Load_EN => MUX2_1:inst11.S
+Load_EN => MUX2_1:inst12.S
+Load_EN => MUX2_1:inst13.S
+Load_EN => MUX2_1:inst14.S
+Load_EN => MUX2_1:inst15.S
+Load_EN => MUX2_1:inst24.S
+Load_EN => MUX2_1:inst25.S
+Load_EN => MUX2_1:inst26.S
+Load_EN => MUX2_1:inst27.S
+Load_EN => MUX2_1:inst28.S
+Load_EN => MUX2_1:inst29.S
+Load_EN => MUX2_1:inst30.S
+Load_EN => MUX2_1:inst32.S
+D[0] => MUX2_1:inst8.B
+D[1] => MUX2_1:inst9.B
+D[2] => MUX2_1:inst10.B
+D[3] => MUX2_1:inst11.B
+D[4] => MUX2_1:inst12.B
+D[5] => MUX2_1:inst13.B
+D[6] => MUX2_1:inst14.B
+D[7] => MUX2_1:inst15.B
+D[8] => MUX2_1:inst24.B
+D[9] => MUX2_1:inst25.B
+D[10] => MUX2_1:inst26.B
+D[11] => MUX2_1:inst27.B
+D[12] => MUX2_1:inst28.B
+D[13] => MUX2_1:inst29.B
+D[14] => MUX2_1:inst30.B
+D[15] => MUX2_1:inst32.B
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst9
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst8
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst10
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst11
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst12
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst13
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst14
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst15
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst24
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst25
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst26
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst27
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst28
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst29
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst30
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst4|MUX2_1:inst32
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15
+Y[0] <= MUX2_1:inst56.Y
+Y[1] <= MUX2_1:inst57.Y
+Y[2] <= MUX2_1:inst58.Y
+Y[3] <= MUX2_1:inst59.Y
+Y[4] <= MUX2_1:inst60.Y
+Y[5] <= MUX2_1:inst61.Y
+Y[6] <= MUX2_1:inst62.Y
+Y[7] <= MUX2_1:inst63.Y
+Y[8] <= MUX2_1:inst64.Y
+Y[9] <= MUX2_1:inst65.Y
+Y[10] <= MUX2_1:inst66.Y
+Y[11] <= MUX2_1:inst67.Y
+Y[12] <= MUX2_1:inst68.Y
+Y[13] <= MUX2_1:inst69.Y
+Y[14] <= MUX2_1:inst70.Y
+Y[15] <= MUX2_1:inst71.Y
+S[0] => MUX2_1:inst56.S
+S[0] => MUX2_1:inst57.S
+S[0] => MUX2_1:inst58.S
+S[0] => MUX2_1:inst59.S
+S[0] => MUX2_1:inst60.S
+S[0] => MUX2_1:inst61.S
+S[0] => MUX2_1:inst62.S
+S[0] => MUX2_1:inst63.S
+S[0] => MUX2_1:inst64.S
+S[0] => MUX2_1:inst65.S
+S[0] => MUX2_1:inst66.S
+S[0] => MUX2_1:inst67.S
+S[0] => MUX2_1:inst68.S
+S[0] => MUX2_1:inst69.S
+S[0] => MUX2_1:inst70.S
+S[0] => MUX2_1:inst71.S
+S[1] => MUX2_1:inst40.S
+S[1] => MUX2_1:inst41.S
+S[1] => MUX2_1:inst42.S
+S[1] => MUX2_1:inst43.S
+S[1] => MUX2_1:inst44.S
+S[1] => MUX2_1:inst45.S
+S[1] => MUX2_1:inst46.S
+S[1] => MUX2_1:inst47.S
+S[1] => MUX2_1:inst48.S
+S[1] => MUX2_1:inst49.S
+S[1] => MUX2_1:inst50.S
+S[1] => MUX2_1:inst51.S
+S[1] => MUX2_1:inst52.S
+S[1] => MUX2_1:inst53.S
+S[1] => MUX2_1:inst54.S
+S[1] => MUX2_1:inst55.S
+S[2] => MUX2_1:inst16.S
+S[2] => MUX2_1:inst18.S
+S[2] => MUX2_1:inst17.S
+S[2] => MUX2_1:inst19.S
+S[2] => MUX2_1:inst20.S
+S[2] => MUX2_1:inst21.S
+S[2] => MUX2_1:inst22.S
+S[2] => MUX2_1:inst23.S
+S[2] => MUX2_1:inst31.S
+S[2] => MUX2_1:inst33.S
+S[2] => MUX2_1:inst34.S
+S[2] => MUX2_1:inst35.S
+S[2] => MUX2_1:inst36.S
+S[2] => MUX2_1:inst37.S
+S[2] => MUX2_1:inst38.S
+S[2] => MUX2_1:inst39.S
+S[3] => MUX2_1:inst8.S
+S[3] => MUX2_1:inst12.S
+S[3] => MUX2_1:inst10.S
+S[3] => MUX2_1:inst14.S
+S[3] => MUX2_1:inst9.S
+S[3] => MUX2_1:inst13.S
+S[3] => MUX2_1:inst11.S
+S[3] => MUX2_1:inst15.S
+S[3] => MUX2_1:inst24.S
+S[3] => MUX2_1:inst25.S
+S[3] => MUX2_1:inst26.S
+S[3] => MUX2_1:inst27.S
+S[3] => MUX2_1:inst28.S
+S[3] => MUX2_1:inst29.S
+S[3] => MUX2_1:inst30.S
+S[3] => MUX2_1:inst32.S
+D[0] => MUX2_1:inst8.A
+D[1] => MUX2_1:inst9.A
+D[2] => MUX2_1:inst10.A
+D[3] => MUX2_1:inst11.A
+D[4] => MUX2_1:inst12.A
+D[5] => MUX2_1:inst13.A
+D[6] => MUX2_1:inst14.A
+D[7] => MUX2_1:inst15.A
+D[8] => MUX2_1:inst8.B
+D[8] => MUX2_1:inst24.A
+D[9] => MUX2_1:inst9.B
+D[9] => MUX2_1:inst25.A
+D[10] => MUX2_1:inst10.B
+D[10] => MUX2_1:inst26.A
+D[11] => MUX2_1:inst11.B
+D[11] => MUX2_1:inst27.A
+D[12] => MUX2_1:inst12.B
+D[12] => MUX2_1:inst28.A
+D[13] => MUX2_1:inst13.B
+D[13] => MUX2_1:inst29.A
+D[14] => MUX2_1:inst14.B
+D[14] => MUX2_1:inst30.A
+D[15] => MUX2_1:inst15.B
+D[15] => MUX2_1:inst24.B
+D[15] => MUX2_1:inst25.B
+D[15] => MUX2_1:inst26.B
+D[15] => MUX2_1:inst27.B
+D[15] => MUX2_1:inst28.B
+D[15] => MUX2_1:inst29.B
+D[15] => MUX2_1:inst30.B
+D[15] => MUX2_1:inst32.A
+D[15] => MUX2_1:inst32.B
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst56
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst40
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst16
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst8
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst12
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst18
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst10
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst14
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst41
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst17
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst9
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst13
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst19
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst11
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst15
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst57
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst42
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst20
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst24
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst58
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst43
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst21
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst25
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst59
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst44
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst22
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst26
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst60
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst45
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst23
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst27
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst61
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst46
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst31
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst28
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst62
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst47
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst33
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst29
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst63
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst48
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst34
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst30
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst64
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst49
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst35
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst32
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst65
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst50
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst36
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst66
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst51
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst37
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst67
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst52
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst38
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst68
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst53
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst39
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst69
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst54
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst70
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst55
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|Shift_Right_n_bit:inst15|MUX2_1:inst71
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst4.CLK
+CLK => inst5.CLK
+CLK => inst6.CLK
+CLK => inst7.CLK
+CLK => inst16.CLK
+CLK => inst18.CLK
+CLK => inst19.CLK
+CLK => inst20.CLK
+CLK => inst21.CLK
+CLK => inst22.CLK
+CLK => inst23.CLK
+CLK => inst31.CLK
+Load_EN => MUX2_1:inst9.S
+Load_EN => MUX2_1:inst8.S
+Load_EN => MUX2_1:inst10.S
+Load_EN => MUX2_1:inst11.S
+Load_EN => MUX2_1:inst12.S
+Load_EN => MUX2_1:inst13.S
+Load_EN => MUX2_1:inst14.S
+Load_EN => MUX2_1:inst15.S
+Load_EN => MUX2_1:inst24.S
+Load_EN => MUX2_1:inst25.S
+Load_EN => MUX2_1:inst26.S
+Load_EN => MUX2_1:inst27.S
+Load_EN => MUX2_1:inst28.S
+Load_EN => MUX2_1:inst29.S
+Load_EN => MUX2_1:inst30.S
+Load_EN => MUX2_1:inst32.S
+D[0] => MUX2_1:inst8.B
+D[1] => MUX2_1:inst9.B
+D[2] => MUX2_1:inst10.B
+D[3] => MUX2_1:inst11.B
+D[4] => MUX2_1:inst12.B
+D[5] => MUX2_1:inst13.B
+D[6] => MUX2_1:inst14.B
+D[7] => MUX2_1:inst15.B
+D[8] => MUX2_1:inst24.B
+D[9] => MUX2_1:inst25.B
+D[10] => MUX2_1:inst26.B
+D[11] => MUX2_1:inst27.B
+D[12] => MUX2_1:inst28.B
+D[13] => MUX2_1:inst29.B
+D[14] => MUX2_1:inst30.B
+D[15] => MUX2_1:inst32.B
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst9
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst8
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst10
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst11
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst12
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst13
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst14
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst15
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst24
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst25
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst26
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst27
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst28
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst29
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst30
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|ver2_pipeline_au|datapath_pipeline_au:inst|register_16_bit:inst2|MUX2_1:inst32
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+

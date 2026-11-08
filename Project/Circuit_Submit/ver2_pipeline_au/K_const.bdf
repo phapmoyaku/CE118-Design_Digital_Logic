@@ -1,0 +1,340 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(output)
+	(rect 912 512 1088 528)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Y[15..0]" (rect 90 0 130 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 232 288 264 304)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 5 20 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 232 336 264 368)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 26 33)(font "Times New Roman" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(connector
+	(pt 568 520)
+	(pt 584 520)
+	(bus)
+)
+(connector
+	(pt 584 520)
+	(pt 600 520)
+	(bus)
+)
+(connector
+	(pt 600 520)
+	(pt 616 520)
+	(bus)
+)
+(connector
+	(pt 616 520)
+	(pt 912 520)
+	(bus)
+)
+(connector
+	(text "Y[2]" (rect 567 486 579 507)(font "Times New Roman" )(vertical))
+	(pt 584 520)
+	(pt 584 408)
+)
+(connector
+	(text "Y[1]" (rect 583 486 595 507)(font "Times New Roman" )(vertical))
+	(pt 600 520)
+	(pt 600 408)
+)
+(connector
+	(text "Y[0]" (rect 599 486 611 507)(font "Times New Roman" )(vertical))
+	(pt 616 520)
+	(pt 616 408)
+)
+(connector
+	(pt 248 304)
+	(pt 248 312)
+)
+(connector
+	(text "Y[15]" (rect 288 487 300 514)(font "Times New Roman" )(vertical))
+	(pt 304 336)
+	(pt 304 520)
+)
+(connector
+	(pt 248 336)
+	(pt 304 336)
+)
+(connector
+	(text "Y[14]" (rect 305 486 317 513)(font "Times New Roman" )(vertical))
+	(pt 320 336)
+	(pt 320 520)
+)
+(connector
+	(pt 304 336)
+	(pt 320 336)
+)
+(connector
+	(pt 304 520)
+	(pt 320 520)
+	(bus)
+)
+(connector
+	(text "Y[13]" (rect 321 486 333 513)(font "Times New Roman" )(vertical))
+	(pt 336 336)
+	(pt 336 520)
+)
+(connector
+	(pt 320 336)
+	(pt 336 336)
+)
+(connector
+	(pt 320 520)
+	(pt 336 520)
+	(bus)
+)
+(connector
+	(text "Y[12]" (rect 337 486 349 513)(font "Times New Roman" )(vertical))
+	(pt 352 312)
+	(pt 352 520)
+)
+(connector
+	(pt 248 312)
+	(pt 352 312)
+)
+(connector
+	(pt 336 520)
+	(pt 352 520)
+	(bus)
+)
+(connector
+	(text "Y[11]" (rect 385 486 397 513)(font "Times New Roman" )(vertical))
+	(pt 400 336)
+	(pt 400 520)
+)
+(connector
+	(pt 336 336)
+	(pt 400 336)
+)
+(connector
+	(pt 352 520)
+	(pt 400 520)
+	(bus)
+)
+(connector
+	(text "Y[10]" (rect 401 486 413 513)(font "Times New Roman" )(vertical))
+	(pt 416 336)
+	(pt 416 520)
+)
+(connector
+	(pt 400 336)
+	(pt 416 336)
+)
+(connector
+	(pt 400 520)
+	(pt 416 520)
+	(bus)
+)
+(connector
+	(text "Y[9]" (rect 417 486 429 507)(font "Times New Roman" )(vertical))
+	(pt 432 312)
+	(pt 432 520)
+)
+(connector
+	(pt 352 312)
+	(pt 432 312)
+)
+(connector
+	(pt 416 520)
+	(pt 432 520)
+	(bus)
+)
+(connector
+	(text "Y[8]" (rect 433 486 445 507)(font "Times New Roman" )(vertical))
+	(pt 448 312)
+	(pt 448 520)
+)
+(connector
+	(pt 432 312)
+	(pt 448 312)
+)
+(connector
+	(pt 432 520)
+	(pt 448 520)
+	(bus)
+)
+(connector
+	(text "Y[7]" (rect 473 486 485 507)(font "Times New Roman" )(vertical))
+	(pt 488 336)
+	(pt 488 520)
+)
+(connector
+	(pt 416 336)
+	(pt 488 336)
+)
+(connector
+	(pt 448 520)
+	(pt 488 520)
+	(bus)
+)
+(connector
+	(text "Y[6]" (rect 489 486 501 507)(font "Times New Roman" )(vertical))
+	(pt 504 312)
+	(pt 504 520)
+)
+(connector
+	(pt 448 312)
+	(pt 504 312)
+)
+(connector
+	(pt 488 520)
+	(pt 504 520)
+	(bus)
+)
+(connector
+	(text "Y[5]" (rect 503 486 515 507)(font "Times New Roman" )(vertical))
+	(pt 520 312)
+	(pt 520 520)
+)
+(connector
+	(pt 504 312)
+	(pt 520 312)
+)
+(connector
+	(pt 504 520)
+	(pt 520 520)
+	(bus)
+)
+(connector
+	(text "Y[4]" (rect 519 486 531 507)(font "Times New Roman" )(vertical))
+	(pt 536 336)
+	(pt 536 520)
+)
+(connector
+	(pt 488 336)
+	(pt 536 336)
+)
+(connector
+	(pt 536 336)
+	(pt 632 336)
+)
+(connector
+	(pt 520 520)
+	(pt 536 520)
+	(bus)
+)
+(connector
+	(pt 536 520)
+	(pt 568 520)
+	(bus)
+)
+(connector
+	(pt 568 408)
+	(pt 584 408)
+)
+(connector
+	(pt 584 408)
+	(pt 600 408)
+)
+(connector
+	(pt 600 408)
+	(pt 616 408)
+)
+(connector
+	(pt 520 312)
+	(pt 568 312)
+)
+(connector
+	(pt 568 312)
+	(pt 624 312)
+)
+(connector
+	(pt 568 312)
+	(pt 568 408)
+)
+(connector
+	(text "Y[3]" (rect 551 486 563 507)(font "Times New Roman" )(vertical))
+	(pt 568 408)
+	(pt 568 520)
+)
+(junction (pt 320 520))
+(junction (pt 336 520))
+(junction (pt 352 520))
+(junction (pt 400 520))
+(junction (pt 416 520))
+(junction (pt 432 520))
+(junction (pt 448 520))
+(junction (pt 488 520))
+(junction (pt 504 520))
+(junction (pt 520 520))
+(junction (pt 536 520))
+(junction (pt 568 520))
+(junction (pt 584 520))
+(junction (pt 600 520))
+(junction (pt 616 520))
+(junction (pt 304 336))
+(junction (pt 320 336))
+(junction (pt 336 336))
+(junction (pt 352 312))
+(junction (pt 400 336))
+(junction (pt 416 336))
+(junction (pt 432 312))
+(junction (pt 448 312))
+(junction (pt 488 336))
+(junction (pt 504 312))
+(junction (pt 520 312))
+(junction (pt 536 336))
+(junction (pt 584 408))
+(junction (pt 600 408))
+(junction (pt 568 312))
+(junction (pt 568 408))

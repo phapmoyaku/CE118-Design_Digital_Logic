@@ -1,0 +1,342 @@
+Simulator report for resgister_2_read
+Tue Oct 14 11:20:19 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 138 nodes    ;
+; Simulation Coverage         ;      42.75 % ;
+; Total Number of Transitions ; 575          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                     ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                           ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                            ;               ;
+; Vector input source                                                                        ; D:/HK3/TKLLS/Quartus/Assignment_4/register_2_read/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                             ; On            ;
+; Check outputs                                                                              ; Off                                                            ; Off           ;
+; Report simulation coverage                                                                 ; On                                                             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                             ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                             ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                             ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                            ; Off           ;
+; Detect glitches                                                                            ; Off                                                            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                            ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      42.75 % ;
+; Total nodes checked                                 ; 138          ;
+; Total output ports checked                          ; 138          ;
+; Total output ports with complete 1/0-value coverage ; 59           ;
+; Total output ports with no 1/0-value coverage       ; 42           ;
+; Total output ports with no 1-value coverage         ; 56           ;
+; Total output ports with no 0-value coverage         ; 65           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                              ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |resgister_2_read|B0                              ; |resgister_2_read|B0                              ; pin_out          ;
+; |resgister_2_read|B0~0                            ; |resgister_2_read|B0~0                            ; out0             ;
+; |resgister_2_read|RA_A0                           ; |resgister_2_read|RA_A0                           ; out              ;
+; |resgister_2_read|RA_A1                           ; |resgister_2_read|RA_A1                           ; out              ;
+; |resgister_2_read|RE_A                            ; |resgister_2_read|RE_A                            ; out              ;
+; |resgister_2_read|RA_B0                           ; |resgister_2_read|RA_B0                           ; out              ;
+; |resgister_2_read|RA_B1                           ; |resgister_2_read|RA_B1                           ; out              ;
+; |resgister_2_read|RE_B                            ; |resgister_2_read|RE_B                            ; out              ;
+; |resgister_2_read|WA0                             ; |resgister_2_read|WA0                             ; out              ;
+; |resgister_2_read|WA1                             ; |resgister_2_read|WA1                             ; out              ;
+; |resgister_2_read|WE                              ; |resgister_2_read|WE                              ; out              ;
+; |resgister_2_read|I0                              ; |resgister_2_read|I0                              ; out              ;
+; |resgister_2_read|Clk                             ; |resgister_2_read|Clk                             ; out              ;
+; |resgister_2_read|B1                              ; |resgister_2_read|B1                              ; pin_out          ;
+; |resgister_2_read|B1~0                            ; |resgister_2_read|B1~0                            ; out0             ;
+; |resgister_2_read|I1                              ; |resgister_2_read|I1                              ; out              ;
+; |resgister_2_read|B2                              ; |resgister_2_read|B2                              ; pin_out          ;
+; |resgister_2_read|B2~0                            ; |resgister_2_read|B2~0                            ; out0             ;
+; |resgister_2_read|I2                              ; |resgister_2_read|I2                              ; out              ;
+; |resgister_2_read|B3                              ; |resgister_2_read|B3                              ; pin_out          ;
+; |resgister_2_read|B3~0                            ; |resgister_2_read|B3~0                            ; out0             ;
+; |resgister_2_read|I3                              ; |resgister_2_read|I3                              ; out              ;
+; |resgister_2_read|A0                              ; |resgister_2_read|A0                              ; pin_out          ;
+; |resgister_2_read|A0~0                            ; |resgister_2_read|A0~0                            ; out0             ;
+; |resgister_2_read|A1                              ; |resgister_2_read|A1                              ; pin_out          ;
+; |resgister_2_read|A1~0                            ; |resgister_2_read|A1~0                            ; out0             ;
+; |resgister_2_read|A2                              ; |resgister_2_read|A2                              ; pin_out          ;
+; |resgister_2_read|A2~0                            ; |resgister_2_read|A2~0                            ; out0             ;
+; |resgister_2_read|A3                              ; |resgister_2_read|A3                              ; pin_out          ;
+; |resgister_2_read|A3~0                            ; |resgister_2_read|A3~0                            ; out0             ;
+; |resgister_2_read|register-file-cell:inst13|inst6 ; |resgister_2_read|register-file-cell:inst13|inst6 ; out              ;
+; |resgister_2_read|register-file-cell:inst13|inst3 ; |resgister_2_read|register-file-cell:inst13|inst3 ; out0             ;
+; |resgister_2_read|register-file-cell:inst13|inst7 ; |resgister_2_read|register-file-cell:inst13|inst7 ; out              ;
+; |resgister_2_read|register-file-cell:inst5|inst3  ; |resgister_2_read|register-file-cell:inst5|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst14|inst6 ; |resgister_2_read|register-file-cell:inst14|inst6 ; out              ;
+; |resgister_2_read|register-file-cell:inst14|inst3 ; |resgister_2_read|register-file-cell:inst14|inst3 ; out0             ;
+; |resgister_2_read|register-file-cell:inst14|inst7 ; |resgister_2_read|register-file-cell:inst14|inst7 ; out              ;
+; |resgister_2_read|register-file-cell:inst10|inst6 ; |resgister_2_read|register-file-cell:inst10|inst6 ; out              ;
+; |resgister_2_read|register-file-cell:inst10|inst3 ; |resgister_2_read|register-file-cell:inst10|inst3 ; out0             ;
+; |resgister_2_read|register-file-cell:inst10|inst7 ; |resgister_2_read|register-file-cell:inst10|inst7 ; out              ;
+; |resgister_2_read|register-file-cell:inst11|inst6 ; |resgister_2_read|register-file-cell:inst11|inst6 ; out              ;
+; |resgister_2_read|register-file-cell:inst11|inst3 ; |resgister_2_read|register-file-cell:inst11|inst3 ; out0             ;
+; |resgister_2_read|register-file-cell:inst11|inst7 ; |resgister_2_read|register-file-cell:inst11|inst7 ; out              ;
+; |resgister_2_read|register-file-cell:inst15|inst6 ; |resgister_2_read|register-file-cell:inst15|inst6 ; out              ;
+; |resgister_2_read|register-file-cell:inst15|inst3 ; |resgister_2_read|register-file-cell:inst15|inst3 ; out0             ;
+; |resgister_2_read|register-file-cell:inst15|inst7 ; |resgister_2_read|register-file-cell:inst15|inst7 ; out              ;
+; |resgister_2_read|register-file-cell:inst16|inst6 ; |resgister_2_read|register-file-cell:inst16|inst6 ; out              ;
+; |resgister_2_read|register-file-cell:inst16|inst3 ; |resgister_2_read|register-file-cell:inst16|inst3 ; out0             ;
+; |resgister_2_read|register-file-cell:inst16|inst7 ; |resgister_2_read|register-file-cell:inst16|inst7 ; out              ;
+; |resgister_2_read|decoder_2_to_4:inst|inst1       ; |resgister_2_read|decoder_2_to_4:inst|inst1       ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst|inst2       ; |resgister_2_read|decoder_2_to_4:inst|inst2       ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst|inst4       ; |resgister_2_read|decoder_2_to_4:inst|inst4       ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst17|inst1     ; |resgister_2_read|decoder_2_to_4:inst17|inst1     ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst17|inst2     ; |resgister_2_read|decoder_2_to_4:inst17|inst2     ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst17|inst4     ; |resgister_2_read|decoder_2_to_4:inst17|inst4     ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst18|inst3     ; |resgister_2_read|decoder_2_to_4:inst18|inst3     ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst18|inst1     ; |resgister_2_read|decoder_2_to_4:inst18|inst1     ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst18|inst2     ; |resgister_2_read|decoder_2_to_4:inst18|inst2     ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst18|inst4     ; |resgister_2_read|decoder_2_to_4:inst18|inst4     ; out0             ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                 ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |resgister_2_read|register-file-cell:inst9|inst6  ; |resgister_2_read|register-file-cell:inst9|inst6  ; out              ;
+; |resgister_2_read|register-file-cell:inst9|inst   ; |resgister_2_read|register-file-cell:inst9|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst9|inst4  ; |resgister_2_read|register-file-cell:inst9|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst9|inst3  ; |resgister_2_read|register-file-cell:inst9|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst9|inst1  ; |resgister_2_read|register-file-cell:inst9|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst9|inst7  ; |resgister_2_read|register-file-cell:inst9|inst7  ; out              ;
+; |resgister_2_read|register-file-cell:inst1|inst6  ; |resgister_2_read|register-file-cell:inst1|inst6  ; out              ;
+; |resgister_2_read|register-file-cell:inst1|inst   ; |resgister_2_read|register-file-cell:inst1|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst1|inst4  ; |resgister_2_read|register-file-cell:inst1|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst1|inst3  ; |resgister_2_read|register-file-cell:inst1|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst1|inst1  ; |resgister_2_read|register-file-cell:inst1|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst1|inst7  ; |resgister_2_read|register-file-cell:inst1|inst7  ; out              ;
+; |resgister_2_read|register-file-cell:inst6|inst6  ; |resgister_2_read|register-file-cell:inst6|inst6  ; out              ;
+; |resgister_2_read|register-file-cell:inst6|inst   ; |resgister_2_read|register-file-cell:inst6|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst6|inst4  ; |resgister_2_read|register-file-cell:inst6|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst6|inst3  ; |resgister_2_read|register-file-cell:inst6|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst6|inst1  ; |resgister_2_read|register-file-cell:inst6|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst6|inst7  ; |resgister_2_read|register-file-cell:inst6|inst7  ; out              ;
+; |resgister_2_read|register-file-cell:inst2|inst6  ; |resgister_2_read|register-file-cell:inst2|inst6  ; out              ;
+; |resgister_2_read|register-file-cell:inst2|inst   ; |resgister_2_read|register-file-cell:inst2|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst2|inst4  ; |resgister_2_read|register-file-cell:inst2|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst2|inst3  ; |resgister_2_read|register-file-cell:inst2|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst2|inst1  ; |resgister_2_read|register-file-cell:inst2|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst2|inst7  ; |resgister_2_read|register-file-cell:inst2|inst7  ; out              ;
+; |resgister_2_read|register-file-cell:inst7|inst6  ; |resgister_2_read|register-file-cell:inst7|inst6  ; out              ;
+; |resgister_2_read|register-file-cell:inst7|inst   ; |resgister_2_read|register-file-cell:inst7|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst7|inst4  ; |resgister_2_read|register-file-cell:inst7|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst7|inst3  ; |resgister_2_read|register-file-cell:inst7|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst7|inst1  ; |resgister_2_read|register-file-cell:inst7|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst7|inst7  ; |resgister_2_read|register-file-cell:inst7|inst7  ; out              ;
+; |resgister_2_read|register-file-cell:inst3|inst6  ; |resgister_2_read|register-file-cell:inst3|inst6  ; out              ;
+; |resgister_2_read|register-file-cell:inst3|inst   ; |resgister_2_read|register-file-cell:inst3|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst3|inst4  ; |resgister_2_read|register-file-cell:inst3|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst3|inst3  ; |resgister_2_read|register-file-cell:inst3|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst3|inst1  ; |resgister_2_read|register-file-cell:inst3|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst3|inst7  ; |resgister_2_read|register-file-cell:inst3|inst7  ; out              ;
+; |resgister_2_read|register-file-cell:inst12|inst6 ; |resgister_2_read|register-file-cell:inst12|inst6 ; out              ;
+; |resgister_2_read|register-file-cell:inst12|inst  ; |resgister_2_read|register-file-cell:inst12|inst  ; regout           ;
+; |resgister_2_read|register-file-cell:inst12|inst4 ; |resgister_2_read|register-file-cell:inst12|inst4 ; out0             ;
+; |resgister_2_read|register-file-cell:inst12|inst3 ; |resgister_2_read|register-file-cell:inst12|inst3 ; out0             ;
+; |resgister_2_read|register-file-cell:inst12|inst1 ; |resgister_2_read|register-file-cell:inst12|inst1 ; out0             ;
+; |resgister_2_read|register-file-cell:inst12|inst7 ; |resgister_2_read|register-file-cell:inst12|inst7 ; out              ;
+; |resgister_2_read|register-file-cell:inst8|inst6  ; |resgister_2_read|register-file-cell:inst8|inst6  ; out              ;
+; |resgister_2_read|register-file-cell:inst8|inst   ; |resgister_2_read|register-file-cell:inst8|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst8|inst4  ; |resgister_2_read|register-file-cell:inst8|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst8|inst3  ; |resgister_2_read|register-file-cell:inst8|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst8|inst1  ; |resgister_2_read|register-file-cell:inst8|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst8|inst7  ; |resgister_2_read|register-file-cell:inst8|inst7  ; out              ;
+; |resgister_2_read|decoder_2_to_4:inst|inst3       ; |resgister_2_read|decoder_2_to_4:inst|inst3       ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst17|inst3     ; |resgister_2_read|decoder_2_to_4:inst17|inst3     ; out0             ;
+; |resgister_2_read|register-file-cell:inst4|inst6  ; |resgister_2_read|register-file-cell:inst4|inst6  ; out              ;
+; |resgister_2_read|register-file-cell:inst4|inst   ; |resgister_2_read|register-file-cell:inst4|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst4|inst4  ; |resgister_2_read|register-file-cell:inst4|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst4|inst3  ; |resgister_2_read|register-file-cell:inst4|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst4|inst1  ; |resgister_2_read|register-file-cell:inst4|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst4|inst7  ; |resgister_2_read|register-file-cell:inst4|inst7  ; out              ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                 ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |resgister_2_read|register-file-cell:inst13|inst  ; |resgister_2_read|register-file-cell:inst13|inst  ; regout           ;
+; |resgister_2_read|register-file-cell:inst13|inst4 ; |resgister_2_read|register-file-cell:inst13|inst4 ; out0             ;
+; |resgister_2_read|register-file-cell:inst13|inst1 ; |resgister_2_read|register-file-cell:inst13|inst1 ; out0             ;
+; |resgister_2_read|register-file-cell:inst9|inst   ; |resgister_2_read|register-file-cell:inst9|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst9|inst4  ; |resgister_2_read|register-file-cell:inst9|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst9|inst3  ; |resgister_2_read|register-file-cell:inst9|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst9|inst1  ; |resgister_2_read|register-file-cell:inst9|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst5|inst6  ; |resgister_2_read|register-file-cell:inst5|inst6  ; out              ;
+; |resgister_2_read|register-file-cell:inst5|inst   ; |resgister_2_read|register-file-cell:inst5|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst5|inst4  ; |resgister_2_read|register-file-cell:inst5|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst5|inst1  ; |resgister_2_read|register-file-cell:inst5|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst5|inst7  ; |resgister_2_read|register-file-cell:inst5|inst7  ; out              ;
+; |resgister_2_read|register-file-cell:inst1|inst   ; |resgister_2_read|register-file-cell:inst1|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst1|inst4  ; |resgister_2_read|register-file-cell:inst1|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst1|inst3  ; |resgister_2_read|register-file-cell:inst1|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst1|inst1  ; |resgister_2_read|register-file-cell:inst1|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst1|inst7  ; |resgister_2_read|register-file-cell:inst1|inst7  ; out              ;
+; |resgister_2_read|register-file-cell:inst14|inst  ; |resgister_2_read|register-file-cell:inst14|inst  ; regout           ;
+; |resgister_2_read|register-file-cell:inst14|inst4 ; |resgister_2_read|register-file-cell:inst14|inst4 ; out0             ;
+; |resgister_2_read|register-file-cell:inst14|inst1 ; |resgister_2_read|register-file-cell:inst14|inst1 ; out0             ;
+; |resgister_2_read|register-file-cell:inst10|inst  ; |resgister_2_read|register-file-cell:inst10|inst  ; regout           ;
+; |resgister_2_read|register-file-cell:inst10|inst4 ; |resgister_2_read|register-file-cell:inst10|inst4 ; out0             ;
+; |resgister_2_read|register-file-cell:inst10|inst1 ; |resgister_2_read|register-file-cell:inst10|inst1 ; out0             ;
+; |resgister_2_read|register-file-cell:inst6|inst   ; |resgister_2_read|register-file-cell:inst6|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst6|inst4  ; |resgister_2_read|register-file-cell:inst6|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst6|inst3  ; |resgister_2_read|register-file-cell:inst6|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst6|inst1  ; |resgister_2_read|register-file-cell:inst6|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst2|inst   ; |resgister_2_read|register-file-cell:inst2|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst2|inst4  ; |resgister_2_read|register-file-cell:inst2|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst2|inst3  ; |resgister_2_read|register-file-cell:inst2|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst2|inst1  ; |resgister_2_read|register-file-cell:inst2|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst2|inst7  ; |resgister_2_read|register-file-cell:inst2|inst7  ; out              ;
+; |resgister_2_read|register-file-cell:inst7|inst   ; |resgister_2_read|register-file-cell:inst7|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst7|inst4  ; |resgister_2_read|register-file-cell:inst7|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst7|inst3  ; |resgister_2_read|register-file-cell:inst7|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst7|inst1  ; |resgister_2_read|register-file-cell:inst7|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst11|inst  ; |resgister_2_read|register-file-cell:inst11|inst  ; regout           ;
+; |resgister_2_read|register-file-cell:inst11|inst4 ; |resgister_2_read|register-file-cell:inst11|inst4 ; out0             ;
+; |resgister_2_read|register-file-cell:inst11|inst1 ; |resgister_2_read|register-file-cell:inst11|inst1 ; out0             ;
+; |resgister_2_read|register-file-cell:inst15|inst  ; |resgister_2_read|register-file-cell:inst15|inst  ; regout           ;
+; |resgister_2_read|register-file-cell:inst15|inst4 ; |resgister_2_read|register-file-cell:inst15|inst4 ; out0             ;
+; |resgister_2_read|register-file-cell:inst15|inst1 ; |resgister_2_read|register-file-cell:inst15|inst1 ; out0             ;
+; |resgister_2_read|register-file-cell:inst3|inst   ; |resgister_2_read|register-file-cell:inst3|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst3|inst4  ; |resgister_2_read|register-file-cell:inst3|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst3|inst3  ; |resgister_2_read|register-file-cell:inst3|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst3|inst1  ; |resgister_2_read|register-file-cell:inst3|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst3|inst7  ; |resgister_2_read|register-file-cell:inst3|inst7  ; out              ;
+; |resgister_2_read|register-file-cell:inst16|inst  ; |resgister_2_read|register-file-cell:inst16|inst  ; regout           ;
+; |resgister_2_read|register-file-cell:inst16|inst4 ; |resgister_2_read|register-file-cell:inst16|inst4 ; out0             ;
+; |resgister_2_read|register-file-cell:inst16|inst1 ; |resgister_2_read|register-file-cell:inst16|inst1 ; out0             ;
+; |resgister_2_read|register-file-cell:inst12|inst  ; |resgister_2_read|register-file-cell:inst12|inst  ; regout           ;
+; |resgister_2_read|register-file-cell:inst12|inst4 ; |resgister_2_read|register-file-cell:inst12|inst4 ; out0             ;
+; |resgister_2_read|register-file-cell:inst12|inst3 ; |resgister_2_read|register-file-cell:inst12|inst3 ; out0             ;
+; |resgister_2_read|register-file-cell:inst12|inst1 ; |resgister_2_read|register-file-cell:inst12|inst1 ; out0             ;
+; |resgister_2_read|register-file-cell:inst8|inst   ; |resgister_2_read|register-file-cell:inst8|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst8|inst4  ; |resgister_2_read|register-file-cell:inst8|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst8|inst3  ; |resgister_2_read|register-file-cell:inst8|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst8|inst1  ; |resgister_2_read|register-file-cell:inst8|inst1  ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst|inst3       ; |resgister_2_read|decoder_2_to_4:inst|inst3       ; out0             ;
+; |resgister_2_read|decoder_2_to_4:inst17|inst3     ; |resgister_2_read|decoder_2_to_4:inst17|inst3     ; out0             ;
+; |resgister_2_read|register-file-cell:inst4|inst   ; |resgister_2_read|register-file-cell:inst4|inst   ; regout           ;
+; |resgister_2_read|register-file-cell:inst4|inst4  ; |resgister_2_read|register-file-cell:inst4|inst4  ; out0             ;
+; |resgister_2_read|register-file-cell:inst4|inst3  ; |resgister_2_read|register-file-cell:inst4|inst3  ; out0             ;
+; |resgister_2_read|register-file-cell:inst4|inst1  ; |resgister_2_read|register-file-cell:inst4|inst1  ; out0             ;
+; |resgister_2_read|register-file-cell:inst4|inst7  ; |resgister_2_read|register-file-cell:inst4|inst7  ; out              ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Oct 14 11:20:19 2025
+Info: Command: quartus_sim --simulation_results_format=VWF resgister_2_read -c resgister_2_read
+Info (324025): Using vector source file "D:/HK3/TKLLS/Quartus/Assignment_4/register_2_read/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      42.75 %
+Info (328052): Number of transitions in simulation is 575
+Info (324045): Vector file resgister_2_read.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4446 megabytes
+    Info: Processing ended: Tue Oct 14 11:20:19 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

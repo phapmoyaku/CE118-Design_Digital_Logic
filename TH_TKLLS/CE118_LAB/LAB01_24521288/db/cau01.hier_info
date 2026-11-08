@@ -1,0 +1,39 @@
+|cau01
+Q2 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+LOAD => Load_Circuit:inst20.LOAD
+LOAD => Load_Circuit:inst3.LOAD
+LOAD => Load_Circuit:inst4.LOAD
+LOAD_Input2 => Load_Circuit:inst20.Input
+LOAD_Input0 => Load_Circuit:inst3.Input
+LOAD_Input1 => Load_Circuit:inst4.Input
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst.CLK
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Load_Circuit:inst20
+CLR_FF <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Input => inst3.IN0
+Input => inst2.IN0
+LOAD => inst1.IN0
+PRE_FF <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Load_Circuit:inst3
+CLR_FF <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Input => inst3.IN0
+Input => inst2.IN0
+LOAD => inst1.IN0
+PRE_FF <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau01|Load_Circuit:inst4
+CLR_FF <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Input => inst3.IN0
+Input => inst2.IN0
+LOAD => inst1.IN0
+PRE_FF <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

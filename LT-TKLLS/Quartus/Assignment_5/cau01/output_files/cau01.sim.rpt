@@ -1,0 +1,566 @@
+Simulator report for cau01
+Wed Oct 29 17:50:06 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 278 nodes    ;
+; Simulation Coverage         ;      50.36 % ;
+; Total Number of Transitions ; 1786         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                 ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                               ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                            ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                  ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                   ;               ;
+; Vector input source                                                                        ; D:/HK3/TKLLS/Quartus/Assignment_5/cau01/Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                    ; On            ;
+; Check outputs                                                                              ; Off                                                   ; Off           ;
+; Report simulation coverage                                                                 ; On                                                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                   ; Off           ;
+; Detect glitches                                                                            ; Off                                                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                  ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      50.36 % ;
+; Total nodes checked                                 ; 278          ;
+; Total output ports checked                          ; 278          ;
+; Total output ports with complete 1/0-value coverage ; 140          ;
+; Total output ports with no 1/0-value coverage       ; 126          ;
+; Total output ports with no 1-value coverage         ; 138          ;
+; Total output ports with no 0-value coverage         ; 126          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                              ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |cau01|Q2_                                        ; |cau01|Q2_                                        ; pin_out          ;
+; |cau01|inst1                                      ; |cau01|inst1                                      ; regout           ;
+; |cau01|CLK                                        ; |cau01|CLK                                        ; out              ;
+; |cau01|inst10                                     ; |cau01|inst10                                     ; out0             ;
+; |cau01|inst3                                      ; |cau01|inst3                                      ; regout           ;
+; |cau01|inst17                                     ; |cau01|inst17                                     ; out0             ;
+; |cau01|inst16                                     ; |cau01|inst16                                     ; out0             ;
+; |cau01|inst2                                      ; |cau01|inst2                                      ; regout           ;
+; |cau01|inst8                                      ; |cau01|inst8                                      ; out0             ;
+; |cau01|inst12                                     ; |cau01|inst12                                     ; out0             ;
+; |cau01|inst11                                     ; |cau01|inst11                                     ; out0             ;
+; |cau01|inst4                                      ; |cau01|inst4                                      ; out0             ;
+; |cau01|A[3]                                       ; |cau01|A[3]                                       ; out              ;
+; |cau01|A[2]                                       ; |cau01|A[2]                                       ; out              ;
+; |cau01|A[1]                                       ; |cau01|A[1]                                       ; out              ;
+; |cau01|A[0]                                       ; |cau01|A[0]                                       ; out              ;
+; |cau01|B[3]                                       ; |cau01|B[3]                                       ; out              ;
+; |cau01|B[2]                                       ; |cau01|B[2]                                       ; out              ;
+; |cau01|B[1]                                       ; |cau01|B[1]                                       ; out              ;
+; |cau01|B[0]                                       ; |cau01|B[0]                                       ; out              ;
+; |cau01|inst14                                     ; |cau01|inst14                                     ; out0             ;
+; |cau01|Start                                      ; |cau01|Start                                      ; out              ;
+; |cau01|Q1_                                        ; |cau01|Q1_                                        ; pin_out          ;
+; |cau01|Q0_                                        ; |cau01|Q0_                                        ; pin_out          ;
+; |cau01|Outport[2]                                 ; |cau01|Outport[2]                                 ; pin_out          ;
+; |cau01|Outport[0]                                 ; |cau01|Outport[0]                                 ; pin_out          ;
+; |cau01|Datapath_Multify_4bit:inst|inst30          ; |cau01|Datapath_Multify_4bit:inst|inst30          ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|inst22          ; |cau01|Datapath_Multify_4bit:inst|inst22          ; out              ;
+; |cau01|Datapath_Multify_4bit:inst|inst24          ; |cau01|Datapath_Multify_4bit:inst|inst24          ; out              ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|25  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|25  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|20  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|20  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|24  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|24  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|18  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|18  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|19  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|19  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|23  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|23  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|16  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|16  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|17  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|17  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|22  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|22  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|14  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|14  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|15  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|15  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|38   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|38   ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|34   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|34   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|46   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|46   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|50   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|50   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|39   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|39   ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|35   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|35   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|57   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|57   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|47   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|47   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|54   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|54   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|40   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|40   ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|36   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|36   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|61   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|61   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|48   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|48   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|60   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|60   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|41   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|41   ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|37   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|37   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|65   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|65   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|49   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|49   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|64   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|64   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|63   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|63   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|59   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|59   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|55   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|55   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst9|21  ; |cau01|Datapath_Multify_4bit:inst|74157:inst9|21  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst9|19  ; |cau01|Datapath_Multify_4bit:inst|74157:inst9|19  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst9|15  ; |cau01|Datapath_Multify_4bit:inst|74157:inst9|15  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|22   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|22   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|34   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|34   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|21   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|21   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|52   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|52   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|25   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|25   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|39   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|39   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|19   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|19   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|40   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|40   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|23   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|23   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|45   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|45   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|33   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|33   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|1    ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|1    ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|32   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|32   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|53   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|53   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|38   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|38   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|44   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|44   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|31   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|31   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|54   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|54   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|30   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|30   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|43   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|43   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|18   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|18   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|27   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|27   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst12|21 ; |cau01|Datapath_Multify_4bit:inst|74157:inst12|21 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst12|19 ; |cau01|Datapath_Multify_4bit:inst|74157:inst12|19 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst12|17 ; |cau01|Datapath_Multify_4bit:inst|74157:inst12|17 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst12|15 ; |cau01|Datapath_Multify_4bit:inst|74157:inst12|15 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|34 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|34 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|39 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|39 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|35 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|35 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|57 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|57 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|36 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|36 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|41 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|41 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|37 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|37 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|65 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|65 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|63 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|63 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|59 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|59 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|55 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|55 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|51 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|51 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|25  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|25  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|20  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|20  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|21  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|21  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|24  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|24  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|18  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|18  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|19  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|19  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|23  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|23  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|16  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|16  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|17  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|17  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|22  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|22  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|14  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|14  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst6|15  ; |cau01|Datapath_Multify_4bit:inst|74157:inst6|15  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|38  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|38  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|34  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|34  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|53  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|53  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|46  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|46  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|50  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|50  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|39  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|39  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|35  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|35  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|57  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|57  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|47  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|47  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|54  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|54  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|40  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|40  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|36  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|36  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|61  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|61  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|48  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|48  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|60  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|60  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|58  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|58  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|41  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|41  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|37  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|37  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|65  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|65  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|49  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|49  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|64  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|64  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|63  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|63  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|59  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|59  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|55  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|55  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|51  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|51  ; out0             ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                 ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |cau01|Outport[7]                                 ; |cau01|Outport[7]                                 ; pin_out          ;
+; |cau01|Outport[6]                                 ; |cau01|Outport[6]                                 ; pin_out          ;
+; |cau01|Outport[5]                                 ; |cau01|Outport[5]                                 ; pin_out          ;
+; |cau01|Outport[4]                                 ; |cau01|Outport[4]                                 ; pin_out          ;
+; |cau01|Outport[3]                                 ; |cau01|Outport[3]                                 ; pin_out          ;
+; |cau01|Outport[1]                                 ; |cau01|Outport[1]                                 ; pin_out          ;
+; |cau01|Datapath_Multify_4bit:inst|inst26          ; |cau01|Datapath_Multify_4bit:inst|inst26          ; out              ;
+; |cau01|Datapath_Multify_4bit:inst|inst25          ; |cau01|Datapath_Multify_4bit:inst|inst25          ; out              ;
+; |cau01|Datapath_Multify_4bit:inst|inst23          ; |cau01|Datapath_Multify_4bit:inst|inst23          ; out              ;
+; |cau01|Datapath_Multify_4bit:inst|inst27          ; |cau01|Datapath_Multify_4bit:inst|inst27          ; out              ;
+; |cau01|Datapath_Multify_4bit:inst|inst28          ; |cau01|Datapath_Multify_4bit:inst|inst28          ; out              ;
+; |cau01|Datapath_Multify_4bit:inst|inst29          ; |cau01|Datapath_Multify_4bit:inst|inst29          ; out              ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst4|21  ; |cau01|Datapath_Multify_4bit:inst|74157:inst4|21  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst4|19  ; |cau01|Datapath_Multify_4bit:inst|74157:inst4|19  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst4|17  ; |cau01|Datapath_Multify_4bit:inst|74157:inst4|17  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst4|15  ; |cau01|Datapath_Multify_4bit:inst|74157:inst4|15  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|38  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|38  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|34  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|34  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|53  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|53  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|46  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|46  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|50  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|50  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|39  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|39  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|35  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|35  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|57  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|57  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|47  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|47  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|56  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|56  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|54  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|54  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|40  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|40  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|36  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|36  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|61  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|61  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|48  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|48  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|60  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|60  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|58  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|58  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|41  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|41  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|37  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|37  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|65  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|65  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|49  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|49  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|64  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|64  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|63  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|63  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|59  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|59  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|55  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|55  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|51  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|51  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst10|21 ; |cau01|Datapath_Multify_4bit:inst|74157:inst10|21 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst10|19 ; |cau01|Datapath_Multify_4bit:inst|74157:inst10|19 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst10|17 ; |cau01|Datapath_Multify_4bit:inst|74157:inst10|17 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst10|15 ; |cau01|Datapath_Multify_4bit:inst|74157:inst10|15 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|22  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|22  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|21  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|21  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|26  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|26  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|25  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|25  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|20  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|20  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|19  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|19  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|24  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|24  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|23  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|23  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|45  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|45  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|33  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|33  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|1   ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|1   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|32  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|32  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|53  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|53  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|38  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|38  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|44  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|44  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|31  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|31  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|51  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|51  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|54  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|54  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|30  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|30  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|43  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|43  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|29  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|29  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|18  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|18  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|28  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|28  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|42  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|42  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|27  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|27  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst13|21 ; |cau01|Datapath_Multify_4bit:inst|74157:inst13|21 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst13|19 ; |cau01|Datapath_Multify_4bit:inst|74157:inst13|19 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst13|17 ; |cau01|Datapath_Multify_4bit:inst|74157:inst13|17 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst13|15 ; |cau01|Datapath_Multify_4bit:inst|74157:inst13|15 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|38 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|38 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|34 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|34 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|53 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|53 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|39 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|39 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|35 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|35 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|57 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|57 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|40 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|40 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|36 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|36 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|61 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|61 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|41 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|41 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|37 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|37 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|65 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|65 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|63 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|63 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|59 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|59 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|55 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|55 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|51 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|51 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|21  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|21  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|53   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|53   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|56   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|56   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|58   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|58   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|51   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|51   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst9|17  ; |cau01|Datapath_Multify_4bit:inst|74157:inst9|17  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|2    ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|2    ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|26   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|26   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|20   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|20   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|24   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|24   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|51   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|51   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|29   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|29   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|38 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|38 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|53 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|53 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|40 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|40 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|61 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|61 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst8|21  ; |cau01|Datapath_Multify_4bit:inst|74157:inst8|21  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst8|19  ; |cau01|Datapath_Multify_4bit:inst|74157:inst8|19  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst8|17  ; |cau01|Datapath_Multify_4bit:inst|74157:inst8|17  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst8|15  ; |cau01|Datapath_Multify_4bit:inst|74157:inst8|15  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|38  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|38  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|34  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|34  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|53  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|53  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|46  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|46  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|50  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|50  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|39  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|39  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|35  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|35  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|57  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|57  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|47  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|47  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|56  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|56  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|54  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|54  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|40  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|40  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|36  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|36  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|61  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|61  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|48  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|48  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|60  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|60  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|58  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|58  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|41  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|41  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|37  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|37  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|65  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|65  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|49  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|49  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|64  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|64  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|63  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|63  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|59  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|59  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|55  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|55  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|51  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|51  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|56  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|56  ; out0             ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                 ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |cau01|Datapath_Multify_4bit:inst|74157:inst4|21  ; |cau01|Datapath_Multify_4bit:inst|74157:inst4|21  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst4|19  ; |cau01|Datapath_Multify_4bit:inst|74157:inst4|19  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst4|17  ; |cau01|Datapath_Multify_4bit:inst|74157:inst4|17  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst4|15  ; |cau01|Datapath_Multify_4bit:inst|74157:inst4|15  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|38  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|38  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|34  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|34  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|53  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|53  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|46  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|46  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|50  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|50  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|39  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|39  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|35  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|35  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|57  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|57  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|47  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|47  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|56  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|56  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|54  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|54  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|40  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|40  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|36  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|36  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|61  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|61  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|48  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|48  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|60  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|60  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|58  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|58  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|41  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|41  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|37  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|37  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|65  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|65  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|49  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|49  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|64  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|64  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|63  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|63  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|59  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|59  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|55  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|55  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst3|51  ; |cau01|Datapath_Multify_4bit:inst|74194:inst3|51  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst10|21 ; |cau01|Datapath_Multify_4bit:inst|74157:inst10|21 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst10|19 ; |cau01|Datapath_Multify_4bit:inst|74157:inst10|19 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst10|17 ; |cau01|Datapath_Multify_4bit:inst|74157:inst10|17 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst10|15 ; |cau01|Datapath_Multify_4bit:inst|74157:inst10|15 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|22  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|22  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|21  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|21  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|26  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|26  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|25  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|25  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|20  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|20  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|19  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|19  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|24  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|24  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|23  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|23  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|45  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|45  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|33  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|33  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|1   ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|1   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|32  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|32  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|53  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|53  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|38  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|38  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|44  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|44  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|31  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|31  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|51  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|51  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|54  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|54  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|30  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|30  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|43  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|43  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|29  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|29  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|18  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|18  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|28  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|28  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|42  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|42  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst11|27  ; |cau01|Datapath_Multify_4bit:inst|7483:inst11|27  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst13|21 ; |cau01|Datapath_Multify_4bit:inst|74157:inst13|21 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst13|19 ; |cau01|Datapath_Multify_4bit:inst|74157:inst13|19 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst13|17 ; |cau01|Datapath_Multify_4bit:inst|74157:inst13|17 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst13|15 ; |cau01|Datapath_Multify_4bit:inst|74157:inst13|15 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|38 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|38 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|34 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|34 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|53 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|53 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|39 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|39 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|35 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|35 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|57 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|57 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|40 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|40 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|36 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|36 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|61 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|61 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|41 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|41 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|37 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|37 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|65 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|65 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|63 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|63 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|59 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|59 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|55 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|55 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst15|51 ; |cau01|Datapath_Multify_4bit:inst|74194:inst15|51 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst2|21  ; |cau01|Datapath_Multify_4bit:inst|74157:inst2|21  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|53   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|53   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|56   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|56   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|58   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|58   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst|51   ; |cau01|Datapath_Multify_4bit:inst|74194:inst|51   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst9|17  ; |cau01|Datapath_Multify_4bit:inst|74157:inst9|17  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|2    ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|2    ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|26   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|26   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|20   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|20   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|24   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|24   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|51   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|51   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|7483:inst1|29   ; |cau01|Datapath_Multify_4bit:inst|7483:inst1|29   ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|38 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|38 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|53 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|53 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|40 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|40 ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst14|61 ; |cau01|Datapath_Multify_4bit:inst|74194:inst14|61 ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst8|21  ; |cau01|Datapath_Multify_4bit:inst|74157:inst8|21  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst8|19  ; |cau01|Datapath_Multify_4bit:inst|74157:inst8|19  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst8|17  ; |cau01|Datapath_Multify_4bit:inst|74157:inst8|17  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74157:inst8|15  ; |cau01|Datapath_Multify_4bit:inst|74157:inst8|15  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|38  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|38  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|34  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|34  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|53  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|53  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|46  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|46  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|50  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|50  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|39  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|39  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|35  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|35  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|57  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|57  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|47  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|47  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|56  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|56  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|54  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|54  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|40  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|40  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|36  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|36  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|61  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|61  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|48  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|48  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|60  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|60  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|58  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|58  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|41  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|41  ; regout           ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|37  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|37  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|65  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|65  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|49  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|49  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|64  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|64  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|63  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|63  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|59  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|59  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|55  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|55  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst7|51  ; |cau01|Datapath_Multify_4bit:inst|74194:inst7|51  ; out0             ;
+; |cau01|Datapath_Multify_4bit:inst|74194:inst5|56  ; |cau01|Datapath_Multify_4bit:inst|74194:inst5|56  ; out0             ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Oct 29 17:50:06 2025
+Info: Command: quartus_sim --simulation_results_format=VWF cau01 -c cau01
+Info (324025): Using vector source file "D:/HK3/TKLLS/Quartus/Assignment_5/cau01/Waveform1.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      50.36 %
+Info (328052): Number of transitions in simulation is 1786
+Info (324045): Vector file cau01.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4446 megabytes
+    Info: Processing ended: Wed Oct 29 17:50:06 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,26 @@
+module mul_q313_by_10000 (
+    input  wire signed [15:0] x_q313,     // Q3.13 (2's complement)
+
+    output wire        sign,               // 1 = âm
+    output wire [15:0] abs_val              // trị tuyệt đối (0..65536)
+);
+
+    // Sau nhân
+    wire signed [29:0] mul_10000;
+
+    // Sau chia 2^13 → số nguyên có dấu
+    wire signed [16:0] scaled_int;
+
+    // Nhân fixed-point với 10000
+    assign mul_10000 = x_q313 * 16'sd10000;
+
+    // Chia 2^13
+    assign scaled_int = mul_10000 >>> 13;
+
+    // Bit dấu
+    assign sign = scaled_int[16];
+
+    // Trị tuyệt đối
+    assign abs_val = sign ? (~scaled_int + 1'b1) : scaled_int;
+
+endmodule

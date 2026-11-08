@@ -1,0 +1,298 @@
+|ram_4x4
+IO3 <> inst20
+A0 => decoder_2_to_4:inst.A0
+A1 => decoder_2_to_4:inst.A1
+RWS => inst17.IN0
+RWS => inst19.IN0
+CS => inst17.IN1
+CS => inst18.IN0
+IO2 <> inst21
+IO1 <> inst22
+IO0 <> inst23
+
+
+|ram_4x4|memory_cell:inst1
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst1|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|decoder_2_to_4:inst
+Y0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst.IN0
+A0 => inst3.IN0
+A0 => inst6.IN0
+A1 => inst5.IN0
+A1 => inst4.IN1
+A1 => inst6.IN1
+Y1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst5
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst5|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst9
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst9|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst13
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst13|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst2
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst2|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst6
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst6|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst10
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst10|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst14
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst14|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst3
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst3|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst7
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst7|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst11
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst11|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst15
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst15|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst4
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst4|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst8
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst8|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst12
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst12|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ram_4x4|memory_cell:inst16
+Output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Input => d_latch_enable:inst.D
+Row_select => inst1.IN0
+Row_select => inst4.OE
+Write_EN => inst1.IN1
+
+
+|ram_4x4|memory_cell:inst16|d_latch_enable:inst
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+EN => inst1.IN1
+EN => inst.IN0
+QN <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

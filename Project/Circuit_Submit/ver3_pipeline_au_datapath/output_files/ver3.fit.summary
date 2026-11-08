@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Dec 29 11:57:30 2025
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : ver3
+Top-level Entity Name : CORDIC_ver3_pipeline_AU_datapath_KIT
+Family : Cyclone II
+Device : EP2C35F672C6
+Timing Models : Final
+Total logic elements : 1,106 / 33,216 ( 3 % )
+    Total combinational functions : 1,095 / 33,216 ( 3 % )
+    Dedicated logic registers : 226 / 33,216 ( < 1 % )
+Total registers : 226
+Total pins : 135 / 475 ( 28 % )
+Total virtual pins : 0
+Total memory bits : 0 / 483,840 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

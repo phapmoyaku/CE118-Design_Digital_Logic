@@ -1,0 +1,204 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 152 464)
+	(text "DOUBLEDABBLE16BIT" (rect 5 0 133 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 432 25 444)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "I[15..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "I[15..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "BCD0[0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD0[0]" (rect 69 27 115 41)(font "Arial" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(port
+		(pt 136 48)
+		(output)
+		(text "BCD0[1]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD0[1]" (rect 69 43 115 57)(font "Arial" (font_size 8)))
+		(line (pt 136 48)(pt 120 48))
+	)
+	(port
+		(pt 136 64)
+		(output)
+		(text "BCD0[2]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD0[2]" (rect 69 59 115 73)(font "Arial" (font_size 8)))
+		(line (pt 136 64)(pt 120 64))
+	)
+	(port
+		(pt 136 80)
+		(output)
+		(text "BCD0[3]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD0[3]" (rect 69 75 115 89)(font "Arial" (font_size 8)))
+		(line (pt 136 80)(pt 120 80))
+	)
+	(port
+		(pt 136 96)
+		(output)
+		(text "BCD1[0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD1[0]" (rect 69 91 115 105)(font "Arial" (font_size 8)))
+		(line (pt 136 96)(pt 120 96))
+	)
+	(port
+		(pt 136 112)
+		(output)
+		(text "BCD1[1]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD1[1]" (rect 69 107 115 121)(font "Arial" (font_size 8)))
+		(line (pt 136 112)(pt 120 112))
+	)
+	(port
+		(pt 136 128)
+		(output)
+		(text "BCD1[2]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD1[2]" (rect 69 123 115 137)(font "Arial" (font_size 8)))
+		(line (pt 136 128)(pt 120 128))
+	)
+	(port
+		(pt 136 144)
+		(output)
+		(text "BCD1[3]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD1[3]" (rect 69 139 115 153)(font "Arial" (font_size 8)))
+		(line (pt 136 144)(pt 120 144))
+	)
+	(port
+		(pt 136 160)
+		(output)
+		(text "BCD2[0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD2[0]" (rect 69 155 115 169)(font "Arial" (font_size 8)))
+		(line (pt 136 160)(pt 120 160))
+	)
+	(port
+		(pt 136 176)
+		(output)
+		(text "BCD2[1]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD2[1]" (rect 69 171 115 185)(font "Arial" (font_size 8)))
+		(line (pt 136 176)(pt 120 176))
+	)
+	(port
+		(pt 136 192)
+		(output)
+		(text "BCD2[2]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD2[2]" (rect 69 187 115 201)(font "Arial" (font_size 8)))
+		(line (pt 136 192)(pt 120 192))
+	)
+	(port
+		(pt 136 208)
+		(output)
+		(text "BCD2[3]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD2[3]" (rect 69 203 115 217)(font "Arial" (font_size 8)))
+		(line (pt 136 208)(pt 120 208))
+	)
+	(port
+		(pt 136 224)
+		(output)
+		(text "BCD3[0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD3[0]" (rect 69 219 115 233)(font "Arial" (font_size 8)))
+		(line (pt 136 224)(pt 120 224))
+	)
+	(port
+		(pt 136 240)
+		(output)
+		(text "BCD3[1]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD3[1]" (rect 69 235 115 249)(font "Arial" (font_size 8)))
+		(line (pt 136 240)(pt 120 240))
+	)
+	(port
+		(pt 136 256)
+		(output)
+		(text "BCD3[2]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD3[2]" (rect 69 251 115 265)(font "Arial" (font_size 8)))
+		(line (pt 136 256)(pt 120 256))
+	)
+	(port
+		(pt 136 272)
+		(output)
+		(text "BCD3[3]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD3[3]" (rect 69 267 115 281)(font "Arial" (font_size 8)))
+		(line (pt 136 272)(pt 120 272))
+	)
+	(port
+		(pt 136 288)
+		(output)
+		(text "BCD4[0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD4[0]" (rect 69 283 115 297)(font "Arial" (font_size 8)))
+		(line (pt 136 288)(pt 120 288))
+	)
+	(port
+		(pt 136 304)
+		(output)
+		(text "BCD4[1]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD4[1]" (rect 69 299 115 313)(font "Arial" (font_size 8)))
+		(line (pt 136 304)(pt 120 304))
+	)
+	(port
+		(pt 136 320)
+		(output)
+		(text "BCD4[2]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD4[2]" (rect 69 315 115 329)(font "Arial" (font_size 8)))
+		(line (pt 136 320)(pt 120 320))
+	)
+	(port
+		(pt 136 336)
+		(output)
+		(text "BCD4[3]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD4[3]" (rect 69 331 115 345)(font "Arial" (font_size 8)))
+		(line (pt 136 336)(pt 120 336))
+	)
+	(port
+		(pt 136 352)
+		(output)
+		(text "BCD5[0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD5[0]" (rect 69 347 115 361)(font "Arial" (font_size 8)))
+		(line (pt 136 352)(pt 120 352))
+	)
+	(port
+		(pt 136 368)
+		(output)
+		(text "BCD5[1]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD5[1]" (rect 69 363 115 377)(font "Arial" (font_size 8)))
+		(line (pt 136 368)(pt 120 368))
+	)
+	(port
+		(pt 136 384)
+		(output)
+		(text "BCD5[2]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD5[2]" (rect 69 379 115 393)(font "Arial" (font_size 8)))
+		(line (pt 136 384)(pt 120 384))
+	)
+	(port
+		(pt 136 400)
+		(output)
+		(text "BCD5[3]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "BCD5[3]" (rect 69 395 115 409)(font "Arial" (font_size 8)))
+		(line (pt 136 400)(pt 120 400))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 432))
+	)
+)

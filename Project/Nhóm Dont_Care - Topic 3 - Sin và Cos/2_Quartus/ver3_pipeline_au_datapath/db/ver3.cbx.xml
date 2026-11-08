@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ver3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CORDIC_ver3_pipeline_AU_datapath_KIT|Output_to_7_seg:inst8|mul_q313_by_10000:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_75h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CORDIC_ver3_pipeline_AU_datapath_KIT|Output_to_7_seg:inst8|mul_q313_by_10000:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_sfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CORDIC_ver3_pipeline_AU_datapath_KIT|Output_to_7_seg:inst8|mul_q313_by_10000:inst8|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_1gh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CORDIC_ver3_pipeline_AU_datapath_KIT|Output_to_7_seg:inst8|mul_q313_by_10000:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_1gh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CORDIC_ver3_pipeline_AU_datapath_KIT|Output_to_7_seg:inst8|mul_q313_by_10000:inst8|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_75h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CORDIC_ver3_pipeline_AU_datapath_KIT|Output_to_7_seg:inst8|mul_q313_by_10000:inst8|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_sfh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

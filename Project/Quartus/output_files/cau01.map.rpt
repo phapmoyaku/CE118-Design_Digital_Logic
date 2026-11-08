@@ -1,0 +1,473 @@
+Analysis & Synthesis report for cau01
+Mon Dec 22 12:13:52 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Dec 22 12:13:52 2025           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; cau01                                           ;
+; Top-level Entity Name              ; ver1_debug                                      ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 356                                             ;
+;     Total combinational functions  ; 324                                             ;
+;     Dedicated logic registers      ; 88                                              ;
+; Total registers                    ; 88                                              ;
+; Total pins                         ; 187                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; ver1_debug         ; cau01              ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                       ; Library ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------+---------+
+; register_16_bit.bdf              ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/register_16_bit.bdf   ;         ;
+; HA.bdf                           ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/HA.bdf                ;         ;
+; Up_Counter.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/Up_Counter.bdf        ;         ;
+; Shift_Right_n_bit.bdf            ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/Shift_Right_n_bit.bdf ;         ;
+; Add_Sub_16bit.bdf                ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/Add_Sub_16bit.bdf     ;         ;
+; K_const.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/K_const.bdf           ;         ;
+; Zero_Const.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/Zero_Const.bdf        ;         ;
+; datapath_ver1.bdf                ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/datapath_ver1.bdf     ;         ;
+; control_ver1.bdf                 ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/control_ver1.bdf      ;         ;
+; check14.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/check14.bdf           ;         ;
+; ver1_debug.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/HK3/TKLLS/Project/Quartus/ver1_debug.bdf        ;         ;
+; mux2_1.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/HK3/TKLLS/Project/Quartus/mux2_1.bdf            ;         ;
+; fa_8bit.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/HK3/TKLLS/Project/Quartus/fa_8bit.bdf           ;         ;
+; fulladder.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/HK3/TKLLS/Project/Quartus/fulladder.bdf         ;         ;
+; rom16_16_verilog.v               ; yes             ; Auto-Found Verilog HDL File              ; D:/HK3/TKLLS/Project/Quartus/rom16_16_verilog.v    ;         ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 356   ;
+;                                             ;       ;
+; Total combinational functions               ; 324   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 216   ;
+;     -- 3 input functions                    ; 81    ;
+;     -- <=2 input functions                  ; 27    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 324   ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 88    ;
+;     -- Dedicated logic registers            ; 88    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 187   ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; Clk   ;
+; Maximum fan-out                             ; 88    ;
+; Total fan-out                               ; 1702  ;
+; Average fan-out                             ; 2.84  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Library Name ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
+; |ver1_debug                      ; 324 (0)           ; 88 (0)       ; 0           ; 0            ; 0       ; 0         ; 187  ; 0            ; |ver1_debug                                                                          ; work         ;
+;    |check14:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|check14:inst4                                                            ; work         ;
+;    |control_ver1:inst|           ; 29 (29)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|control_ver1:inst                                                        ; work         ;
+;    |datapath_ver1:inst1|         ; 294 (216)         ; 84 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1                                                      ; work         ;
+;       |Add_Sub_16bit:inst13|     ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13                                 ; work         ;
+;          |FA_8bit:inst11|        ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11                  ; work         ;
+;             |FullAdder:inst16|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst16 ; work         ;
+;             |FullAdder:inst17|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst17 ; work         ;
+;             |FullAdder:inst18|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst18 ; work         ;
+;             |FullAdder:inst19|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst19 ; work         ;
+;             |FullAdder:inst20|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst20 ; work         ;
+;             |FullAdder:inst21|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst21 ; work         ;
+;             |FullAdder:inst2|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst2  ; work         ;
+;             |FullAdder:inst|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst   ; work         ;
+;          |FA_8bit:inst25|        ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25                  ; work         ;
+;             |FullAdder:inst16|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst16 ; work         ;
+;             |FullAdder:inst17|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst17 ; work         ;
+;             |FullAdder:inst18|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst18 ; work         ;
+;             |FullAdder:inst19|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst19 ; work         ;
+;             |FullAdder:inst20|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst20 ; work         ;
+;             |FullAdder:inst21|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst21 ; work         ;
+;             |FullAdder:inst2|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst2  ; work         ;
+;             |FullAdder:inst|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst   ; work         ;
+;       |Shift_Right_n_bit:inst15| ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15                             ; work         ;
+;          |MUX2_1:inst18|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst18               ; work         ;
+;          |MUX2_1:inst19|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst19               ; work         ;
+;          |MUX2_1:inst21|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst21               ; work         ;
+;          |MUX2_1:inst22|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst22               ; work         ;
+;          |MUX2_1:inst41|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst41               ; work         ;
+;          |MUX2_1:inst42|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst42               ; work         ;
+;          |MUX2_1:inst43|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst43               ; work         ;
+;          |MUX2_1:inst45|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst45               ; work         ;
+;          |MUX2_1:inst46|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst46               ; work         ;
+;          |MUX2_1:inst47|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst47               ; work         ;
+;          |MUX2_1:inst48|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst48               ; work         ;
+;          |MUX2_1:inst49|         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst49               ; work         ;
+;          |MUX2_1:inst50|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst50               ; work         ;
+;          |MUX2_1:inst66|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst66               ; work         ;
+;          |MUX2_1:inst67|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst67               ; work         ;
+;       |Up_Counter:inst5|         ; 5 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Up_Counter:inst5                                     ; work         ;
+;          |HA:inst2|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|Up_Counter:inst5|HA:inst2                            ; work         ;
+;       |register_16_bit:inst1|    ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|register_16_bit:inst1                                ; work         ;
+;       |register_16_bit:inst2|    ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|register_16_bit:inst2                                ; work         ;
+;       |register_16_bit:inst3|    ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|register_16_bit:inst3                                ; work         ;
+;       |register_16_bit:inst4|    ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|register_16_bit:inst4                                ; work         ;
+;       |register_16_bit:inst|     ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|register_16_bit:inst                                 ; work         ;
+;       |rom16_16_verilog:inst14|  ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ver1_debug|datapath_ver1:inst1|rom16_16_verilog:inst14                              ; work         ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 88    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 80    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ver1_debug|datapath_ver1:inst1|Shift_Right_n_bit:inst15|MUX2_1:inst19|inst2 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Dec 22 12:13:50 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cau01 -c cau01
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file register_16_bit.bdf
+    Info (12023): Found entity 1: register_16_bit
+Warning (12019): Can't analyze file -- file tri_16.bdf is missing
+Info (12021): Found 1 design units, including 1 entities, in source file ha.bdf
+    Info (12023): Found entity 1: HA
+Info (12021): Found 1 design units, including 1 entities, in source file up_counter.bdf
+    Info (12023): Found entity 1: Up_Counter
+Info (12021): Found 1 design units, including 1 entities, in source file shift_right_n_bit.bdf
+    Info (12023): Found entity 1: Shift_Right_n_bit
+Info (12021): Found 1 design units, including 1 entities, in source file add_sub_16bit.bdf
+    Info (12023): Found entity 1: Add_Sub_16bit
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_4_to_16.bdf
+    Info (12023): Found entity 1: decoder_4_to_16
+Info (12021): Found 1 design units, including 1 entities, in source file test_rom.bdf
+    Info (12023): Found entity 1: test_rom
+Info (12021): Found 1 design units, including 1 entities, in source file test_shift.bdf
+    Info (12023): Found entity 1: test_shift
+Info (12021): Found 1 design units, including 1 entities, in source file test_alu.bdf
+    Info (12023): Found entity 1: test_alu
+Info (12021): Found 1 design units, including 1 entities, in source file lpm_constant0.v
+    Info (12023): Found entity 1: lpm_constant0
+Info (12021): Found 1 design units, including 1 entities, in source file k_const.bdf
+    Info (12023): Found entity 1: K_const
+Info (12021): Found 1 design units, including 1 entities, in source file zero_const.bdf
+    Info (12023): Found entity 1: Zero_Const
+Info (12021): Found 1 design units, including 1 entities, in source file test_register.bdf
+    Info (12023): Found entity 1: test_register
+Warning (12019): Can't analyze file -- file tri_4.bdf is missing
+Info (12021): Found 1 design units, including 1 entities, in source file datapath_ver1.bdf
+    Info (12023): Found entity 1: datapath_ver1
+Info (12021): Found 1 design units, including 1 entities, in source file test_tri.bdf
+    Info (12023): Found entity 1: test_tri
+Info (12021): Found 1 design units, including 1 entities, in source file test_counter.bdf
+    Info (12023): Found entity 1: test_counter
+Info (12021): Found 1 design units, including 1 entities, in source file control_ver1.bdf
+    Info (12023): Found entity 1: control_ver1
+Info (12021): Found 1 design units, including 1 entities, in source file checkzero.bdf
+    Info (12023): Found entity 1: checkZero
+Info (12021): Found 1 design units, including 1 entities, in source file check14.bdf
+    Info (12023): Found entity 1: check14
+Warning (12019): Can't analyze file -- file ver1.bdf is missing
+Info (12021): Found 1 design units, including 1 entities, in source file ver1_debug.bdf
+    Info (12023): Found entity 1: ver1_debug
+Info (12127): Elaborating entity "ver1_debug" for the top level hierarchy
+Info (12128): Elaborating entity "control_ver1" for hierarchy "control_ver1:inst"
+Warning (275009): Pin "Test" not connected
+Info (12128): Elaborating entity "check14" for hierarchy "check14:inst4"
+Info (12128): Elaborating entity "datapath_ver1" for hierarchy "datapath_ver1:inst1"
+Info (12128): Elaborating entity "register_16_bit" for hierarchy "datapath_ver1:inst1|register_16_bit:inst"
+Warning (12125): Using design file mux2_1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: MUX2_1
+Info (12128): Elaborating entity "MUX2_1" for hierarchy "datapath_ver1:inst1|register_16_bit:inst|MUX2_1:inst9"
+Info (12128): Elaborating entity "K_const" for hierarchy "datapath_ver1:inst1|K_const:inst12"
+Info (12128): Elaborating entity "Shift_Right_n_bit" for hierarchy "datapath_ver1:inst1|Shift_Right_n_bit:inst15"
+Info (12128): Elaborating entity "Up_Counter" for hierarchy "datapath_ver1:inst1|Up_Counter:inst5"
+Info (12128): Elaborating entity "HA" for hierarchy "datapath_ver1:inst1|Up_Counter:inst5|HA:inst3"
+Info (12128): Elaborating entity "Add_Sub_16bit" for hierarchy "datapath_ver1:inst1|Add_Sub_16bit:inst13"
+Warning (275002): No superset bus at connection
+Warning (275002): No superset bus at connection
+Warning (275002): No superset bus at connection
+Warning (275002): No superset bus at connection
+Warning (12125): Using design file fa_8bit.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: FA_8bit
+Info (12128): Elaborating entity "FA_8bit" for hierarchy "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11"
+Warning (12125): Using design file fulladder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: FullAdder
+Info (12128): Elaborating entity "FullAdder" for hierarchy "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst"
+Info (12128): Elaborating entity "Zero_Const" for hierarchy "datapath_ver1:inst1|Zero_Const:inst21"
+Warning (12125): Using design file rom16_16_verilog.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: rom16_16_verilog
+Info (12128): Elaborating entity "rom16_16_verilog" for hierarchy "datapath_ver1:inst1|rom16_16_verilog:inst14"
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[15]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst21|inst1" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[14]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst20|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[13]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst19|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[12]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst2|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[11]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst18|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[10]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst17|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[9]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst16|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[8]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[7]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst21|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[6]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst20|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[5]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst19|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[4]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst2|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[3]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst18|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[2]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst17|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[1]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst16|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst68[0]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst|inst1" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst64[15]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst21|inst1" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst64[14]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst20|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst64[13]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst19|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[12]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst2|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[11]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst18|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[10]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst17|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[9]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst16|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[8]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst25|FullAdder:inst|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[7]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst21|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[6]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst20|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[5]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst19|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[4]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst2|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[3]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst18|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[2]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst17|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[1]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst16|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst73[0]" to the node "datapath_ver1:inst1|Add_Sub_16bit:inst13|FA_8bit:inst11|FullAdder:inst|inst1" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[15]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst31" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[14]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[13]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[12]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst21" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[11]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst20" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[10]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst19" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[9]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst18" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[8]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst16" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[7]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst7" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[6]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst6" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[5]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[4]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst4" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[3]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[2]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst2" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[1]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst1" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst62[0]" to the node "datapath_ver1:inst1|register_16_bit:inst|inst" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[15]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst31" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[14]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[13]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[12]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst21" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[11]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst20" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[10]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst19" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[9]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst18" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[8]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst16" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[7]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst7" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[6]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst6" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[5]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[4]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst4" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[3]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[2]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst2" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[1]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst1" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst65[0]" to the node "datapath_ver1:inst1|register_16_bit:inst1|inst" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[15]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst31" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[14]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[13]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[12]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst21" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[11]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst20" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[10]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst19" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[9]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst18" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[8]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst16" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[7]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst7" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[6]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst6" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[5]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[4]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst4" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[3]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[2]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst2" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[1]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst1" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "datapath_ver1:inst1|inst80[0]" to the node "datapath_ver1:inst1|register_16_bit:inst2|inst" into an OR gate
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 588 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 169 output pins
+    Info (21061): Implemented 401 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 94 warnings
+    Info: Peak virtual memory: 4608 megabytes
+    Info: Processing ended: Mon Dec 22 12:13:52 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

@@ -1,0 +1,25 @@
+module mul_q313_by_100 (
+    input  wire signed [15:0] x_q313,    // Q3.13 (2's complement)
+    output wire        sign,              // 1 = âm, 0 = dương
+    output wire [8:0]  y_abs10             // trị tuyệt đối (9 bit, unsigned)
+);
+
+    // Trung gian sau nhân
+    wire signed [22:0] mul_100;
+
+    // Kết quả sau chia 2^13 (số nguyên có dấu)
+    wire signed [9:0] y_int;
+
+    // Nhân fixed với 100
+    assign mul_100 = x_q313 * 16'sd100;
+
+    // Chia 2^13 (dịch phải số học)
+    assign y_int = mul_100 >>> 13;
+
+    // Bit dấu
+    assign sign = y_int[9];   // MSB
+
+    // Lấy trị tuyệt đối (two's complement nếu âm)
+    assign y_abs = sign ? (~y_int + 1'b1) : y_int;
+
+endmodule

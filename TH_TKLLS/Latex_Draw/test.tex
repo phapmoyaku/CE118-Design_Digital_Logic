@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning}
+
+\begin{document}
+
+\begin{tikzpicture}[shorten >=1pt, auto, node distance=3cm,
+every state/.style={thick, minimum size=15mm, draw=blue!70, fill=blue!10, text centered}]
+
+
+
+% Moore FSM
+% --- Tạo node có đường kẻ ngang ---
+
+
+
+\node[state, initial] (S0) {
+    \begin{tabular}{c}
+        $S_0$ \\[0pt] \hline \\[-10pt]
+        $0$
+    \end{tabular}
+};
+
+\node[state] (S1) [right of=S0] {
+    \begin{tabular}{c}
+        $S_1$ \\[0pt] \hline \\[-10pt]
+        $0$
+    \end{tabular}
+};
+
+
+\node[state] (S2) [right of=S1] {
+    \begin{tabular}{c}
+        $S_2$ \\[0pt] \hline \\[-10pt]
+        $0$
+    \end{tabular}
+};
+
+\node[state] (S3) [right of=S2] {
+    \begin{tabular}{c}
+        $S_3$ \\[0pt] \hline \\[-10pt]
+        $1daa$
+    \end{tabular}
+};
+
+
+
+
+
+
+\path
+(S0) edge [loop above] node {X=0} (S0)
+(S0) edge[->, thick] node {X=1} (S1)
+(S1) edge[->, thick] node {X=0} (S2)
+(S2) edge[->, thick] node {X=1} (S3)
+(S1) edge [loop below] node {X=1} (S1)
+(S2) edge [->, thick, bend left=80] node {X=0} (S0)
+(S3) edge[->, thick, bend right=40] node[above]{X=0} (S2)
+(S3) edge[->, thick, bend right=70] node[above]{X=1} (S1)
+
+
+
+\\
+\\
+\\
+
+
+
+\end{tikzpicture}
+
+\end{document}

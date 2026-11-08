@@ -1,0 +1,279 @@
+|resgister_2_read
+B0 <= B0~0.DB_MAX_OUTPUT_PORT_TYPE
+RA_A0 => decoder_2_to_4:inst18.A0
+RA_A1 => decoder_2_to_4:inst18.A1
+RE_A => decoder_2_to_4:inst18.EN
+RA_B0 => decoder_2_to_4:inst17.A0
+RA_B1 => decoder_2_to_4:inst17.A1
+RE_B => decoder_2_to_4:inst17.EN
+WA0 => decoder_2_to_4:inst.A0
+WA1 => decoder_2_to_4:inst.A1
+WE => decoder_2_to_4:inst.EN
+I0 => register-file-cell:inst4.Input
+I0 => register-file-cell:inst8.Input
+I0 => register-file-cell:inst12.Input
+I0 => register-file-cell:inst16.Input
+Clk => register-file-cell:inst4.Clk
+Clk => register-file-cell:inst8.Clk
+Clk => register-file-cell:inst12.Clk
+Clk => register-file-cell:inst16.Clk
+Clk => register-file-cell:inst3.Clk
+Clk => register-file-cell:inst15.Clk
+Clk => register-file-cell:inst11.Clk
+Clk => register-file-cell:inst7.Clk
+Clk => register-file-cell:inst2.Clk
+Clk => register-file-cell:inst6.Clk
+Clk => register-file-cell:inst10.Clk
+Clk => register-file-cell:inst14.Clk
+Clk => register-file-cell:inst1.Clk
+Clk => register-file-cell:inst5.Clk
+Clk => register-file-cell:inst9.Clk
+Clk => register-file-cell:inst13.Clk
+B1 <= B1~0.DB_MAX_OUTPUT_PORT_TYPE
+I1 => register-file-cell:inst3.Input
+I1 => register-file-cell:inst15.Input
+I1 => register-file-cell:inst11.Input
+I1 => register-file-cell:inst7.Input
+B2 <= B2~0.DB_MAX_OUTPUT_PORT_TYPE
+I2 => register-file-cell:inst2.Input
+I2 => register-file-cell:inst6.Input
+I2 => register-file-cell:inst10.Input
+I2 => register-file-cell:inst14.Input
+B3 <= B3~0.DB_MAX_OUTPUT_PORT_TYPE
+I3 => register-file-cell:inst1.Input
+I3 => register-file-cell:inst5.Input
+I3 => register-file-cell:inst9.Input
+I3 => register-file-cell:inst13.Input
+A0 <= A0~0.DB_MAX_OUTPUT_PORT_TYPE
+A1 <= A1~0.DB_MAX_OUTPUT_PORT_TYPE
+A2 <= A2~0.DB_MAX_OUTPUT_PORT_TYPE
+A3 <= A3~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|resgister_2_read|register-file-cell:inst4
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|decoder_2_to_4:inst18
+Y0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst.IN0
+A0 => inst1.IN0
+A0 => inst4.IN0
+A1 => inst5.IN0
+A1 => inst2.IN1
+A1 => inst4.IN1
+EN => inst3.IN2
+EN => inst1.IN2
+EN => inst2.IN2
+EN => inst4.IN2
+Y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|resgister_2_read|decoder_2_to_4:inst17
+Y0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst.IN0
+A0 => inst1.IN0
+A0 => inst4.IN0
+A1 => inst5.IN0
+A1 => inst2.IN1
+A1 => inst4.IN1
+EN => inst3.IN2
+EN => inst1.IN2
+EN => inst2.IN2
+EN => inst4.IN2
+Y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|resgister_2_read|decoder_2_to_4:inst
+Y0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst.IN0
+A0 => inst1.IN0
+A0 => inst4.IN0
+A1 => inst5.IN0
+A1 => inst2.IN1
+A1 => inst4.IN1
+EN => inst3.IN2
+EN => inst1.IN2
+EN => inst2.IN2
+EN => inst4.IN2
+Y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|resgister_2_read|register-file-cell:inst8
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst12
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst16
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst3
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst15
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst11
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst7
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst2
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst6
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst10
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst14
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst1
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst5
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst9
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+
+|resgister_2_read|register-file-cell:inst13
+OutA <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Input => inst3.IN0
+Write_select => inst3.IN1
+Write_select => inst2.IN0
+Read_Select_A => inst6.OE
+OutB <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Read_Select_B => inst7.OE
+
+

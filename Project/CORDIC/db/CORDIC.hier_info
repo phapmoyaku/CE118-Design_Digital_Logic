@@ -1,0 +1,127 @@
+|CORDIC
+Q[0] <= tri16b:inst.Q[0]
+Q[1] <= tri16b:inst.Q[1]
+Q[2] <= tri16b:inst.Q[2]
+Q[3] <= tri16b:inst.Q[3]
+Q[4] <= tri16b:inst.Q[4]
+Q[5] <= tri16b:inst.Q[5]
+Q[6] <= tri16b:inst.Q[6]
+Q[7] <= tri16b:inst.Q[7]
+Q[8] <= tri16b:inst.Q[8]
+Q[9] <= tri16b:inst.Q[9]
+Q[10] <= tri16b:inst.Q[10]
+Q[11] <= tri16b:inst.Q[11]
+Q[12] <= tri16b:inst.Q[12]
+Q[13] <= tri16b:inst.Q[13]
+Q[14] <= tri16b:inst.Q[14]
+Q[15] <= tri16b:inst.Q[15]
+S => tri16b:inst.S
+A[0] => tri16b:inst.I[0]
+A[1] => tri16b:inst.I[1]
+A[2] => tri16b:inst.I[2]
+A[3] => tri16b:inst.I[3]
+A[4] => tri16b:inst.I[4]
+A[5] => tri16b:inst.I[5]
+A[6] => tri16b:inst.I[6]
+A[7] => tri16b:inst.I[7]
+A[8] => tri16b:inst.I[8]
+A[9] => tri16b:inst.I[9]
+A[10] => tri16b:inst.I[10]
+A[11] => tri16b:inst.I[11]
+A[12] => tri16b:inst.I[12]
+A[13] => tri16b:inst.I[13]
+A[14] => tri16b:inst.I[14]
+A[15] => tri16b:inst.I[15]
+
+
+|CORDIC|tri16b:inst
+Q[0] <= tri8b:inst.Q0
+Q[1] <= tri8b:inst.Q1
+Q[2] <= tri8b:inst.Q2
+Q[3] <= tri8b:inst.Q3
+Q[4] <= tri8b:inst.Q4
+Q[5] <= tri8b:inst.Q5
+Q[6] <= tri8b:inst.Q6
+Q[7] <= tri8b:inst.Q7
+Q[8] <= tri8b:inst1.Q0
+Q[9] <= tri8b:inst1.Q1
+Q[10] <= tri8b:inst1.Q2
+Q[11] <= tri8b:inst1.Q3
+Q[12] <= tri8b:inst1.Q4
+Q[13] <= tri8b:inst1.Q5
+Q[14] <= tri8b:inst1.Q6
+Q[15] <= tri8b:inst1.Q7
+I[0] => tri8b:inst.I0
+I[1] => tri8b:inst.I1
+I[2] => tri8b:inst.I2
+I[3] => tri8b:inst.I3
+I[4] => tri8b:inst.I4
+I[5] => tri8b:inst.I5
+I[6] => tri8b:inst.I6
+I[7] => tri8b:inst.I7
+I[8] => tri8b:inst1.I0
+I[9] => tri8b:inst1.I1
+I[10] => tri8b:inst1.I2
+I[11] => tri8b:inst1.I3
+I[12] => tri8b:inst1.I4
+I[13] => tri8b:inst1.I5
+I[14] => tri8b:inst1.I6
+I[15] => tri8b:inst1.I7
+S => tri8b:inst.S
+S => tri8b:inst1.S
+
+
+|CORDIC|tri16b:inst|tri8b:inst
+Q0 <= a.DB_MAX_OUTPUT_PORT_TYPE
+I0 => a.DATAIN
+S => a.OE
+S => b.OE
+S => c.OE
+S => d.OE
+S => e.OE
+S => f.OE
+S => g.OE
+S => h.OE
+Q1 <= b.DB_MAX_OUTPUT_PORT_TYPE
+I1 => b.DATAIN
+Q2 <= c.DB_MAX_OUTPUT_PORT_TYPE
+I2 => c.DATAIN
+Q3 <= d.DB_MAX_OUTPUT_PORT_TYPE
+I3 => d.DATAIN
+Q4 <= e.DB_MAX_OUTPUT_PORT_TYPE
+I4 => e.DATAIN
+Q5 <= f.DB_MAX_OUTPUT_PORT_TYPE
+I5 => f.DATAIN
+Q6 <= g.DB_MAX_OUTPUT_PORT_TYPE
+I6 => g.DATAIN
+Q7 <= h.DB_MAX_OUTPUT_PORT_TYPE
+I7 => h.DATAIN
+
+
+|CORDIC|tri16b:inst|tri8b:inst1
+Q0 <= a.DB_MAX_OUTPUT_PORT_TYPE
+I0 => a.DATAIN
+S => a.OE
+S => b.OE
+S => c.OE
+S => d.OE
+S => e.OE
+S => f.OE
+S => g.OE
+S => h.OE
+Q1 <= b.DB_MAX_OUTPUT_PORT_TYPE
+I1 => b.DATAIN
+Q2 <= c.DB_MAX_OUTPUT_PORT_TYPE
+I2 => c.DATAIN
+Q3 <= d.DB_MAX_OUTPUT_PORT_TYPE
+I3 => d.DATAIN
+Q4 <= e.DB_MAX_OUTPUT_PORT_TYPE
+I4 => e.DATAIN
+Q5 <= f.DB_MAX_OUTPUT_PORT_TYPE
+I5 => f.DATAIN
+Q6 <= g.DB_MAX_OUTPUT_PORT_TYPE
+I6 => g.DATAIN
+Q7 <= h.DB_MAX_OUTPUT_PORT_TYPE
+I7 => h.DATAIN
+
+

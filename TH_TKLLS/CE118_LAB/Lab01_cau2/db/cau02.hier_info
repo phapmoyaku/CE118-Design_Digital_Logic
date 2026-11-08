@@ -1,0 +1,39 @@
+|cau02
+Q2 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+LOAD => MUX2_1:inst4.S
+LOAD => MUX2_1:inst13.S
+LOAD => MUX2_1:inst9.S
+LOAD_Input1 => inst26.IN1
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst.CLK
+LOAD_Input0 => inst27.IN1
+LOAD_Input2 => inst25.IN1
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau02|MUX2_1:inst4
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|cau02|MUX2_1:inst13
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+
+|cau02|MUX2_1:inst9
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+B => inst1.IN1
+A => inst.IN1
+
+

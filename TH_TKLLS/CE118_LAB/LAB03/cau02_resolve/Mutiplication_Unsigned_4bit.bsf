@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 216 256)
+	(text "Mutiplication_Unsigned_4bit" (rect 5 0 144 12)(font "Times New Roman" ))
+	(text "inst" (rect 8 176 25 188)(font "Times New Roman" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[3..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "A[3..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "B[3..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "B[3..0]" (rect 21 43 57 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 152 120)
+		(output)
+		(text "Product[6]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Product[6]" (rect 74 115 131 129)(font "Arial" (font_size 8)))
+		(line (pt 152 120)(pt 136 120))
+	)
+	(port
+		(pt 152 136)
+		(output)
+		(text "Product[7]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Product[7]" (rect 74 131 131 145)(font "Arial" (font_size 8)))
+		(line (pt 152 136)(pt 136 136))
+	)
+	(port
+		(pt 152 72)
+		(output)
+		(text "Product[3]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Product[3]" (rect 74 67 131 81)(font "Arial" (font_size 8)))
+		(line (pt 152 72)(pt 136 72))
+	)
+	(port
+		(pt 152 88)
+		(output)
+		(text "Product[4]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Product[4]" (rect 74 83 131 97)(font "Arial" (font_size 8)))
+		(line (pt 152 88)(pt 136 88))
+	)
+	(port
+		(pt 152 104)
+		(output)
+		(text "Product[5]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Product[5]" (rect 74 99 131 113)(font "Arial" (font_size 8)))
+		(line (pt 152 104)(pt 136 104))
+	)
+	(port
+		(pt 152 24)
+		(output)
+		(text "Product[0]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Product[0]" (rect 74 19 131 33)(font "Arial" (font_size 8)))
+		(line (pt 152 24)(pt 136 24))
+	)
+	(port
+		(pt 152 40)
+		(output)
+		(text "Product[1]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Product[1]" (rect 74 35 131 49)(font "Arial" (font_size 8)))
+		(line (pt 152 40)(pt 136 40))
+	)
+	(port
+		(pt 152 56)
+		(output)
+		(text "Product[2]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Product[2]" (rect 74 51 131 65)(font "Arial" (font_size 8)))
+		(line (pt 152 56)(pt 136 56))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 176))
+	)
+)
